@@ -15,6 +15,10 @@
 		44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */; };
 		44353DB01C6FEB2500F4C20B /* viewtestingremoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DAF1C6FEB2500F4C20B /* viewtestingremoteTests.m */; };
 		44353DBB1C6FEB2500F4C20B /* viewtestingremoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DBA1C6FEB2500F4C20B /* viewtestingremoteUITests.m */; };
+		44353DCA1C6FEC3100F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */; };
+		44353DCC1C6FEC4300F4C20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCB1C6FEC4300F4C20B /* UIKit.framework */; };
+		44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCD1C6FEC4B00F4C20B /* Foundation.framework */; };
+		44353DDC1C6FEE2300F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DDB1C6FEE2300F4C20B /* SessionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		44353DB61C6FEB2500F4C20B /* viewtestingremoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewtestingremoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353DBA1C6FEB2500F4C20B /* viewtestingremoteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewtestingremoteUITests.m; sourceTree = "<group>"; };
 		44353DBC1C6FEB2500F4C20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		44353DCB1C6FEC4300F4C20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44353DCD1C6FEC4B00F4C20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44353DD91C6FED8D00F4C20B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		44353DDA1C6FEE2300F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionController.h; path = ../../../playLoteria/playLoteria/SessionController.h; sourceTree = "<group>"; };
+		44353DDB1C6FEE2300F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionController.m; path = ../../../playLoteria/playLoteria/SessionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */,
+				44353DCC1C6FEC4300F4C20B /* UIKit.framework in Frameworks */,
+				44353DCA1C6FEC3100F4C20B /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,9 @@
 		44353D891C6FEB2500F4C20B = {
 			isa = PBXGroup;
 			children = (
+				44353DCD1C6FEC4B00F4C20B /* Foundation.framework */,
+				44353DCB1C6FEC4300F4C20B /* UIKit.framework */,
+				44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */,
 				44353D941C6FEB2500F4C20B /* viewtestingremote */,
 				44353DAE1C6FEB2500F4C20B /* viewtestingremoteTests */,
 				44353DB91C6FEB2500F4C20B /* viewtestingremoteUITests */,
@@ -101,6 +117,8 @@
 		44353D941C6FEB2500F4C20B /* viewtestingremote */ = {
 			isa = PBXGroup;
 			children = (
+				44353DDA1C6FEE2300F4C20B /* SessionController.h */,
+				44353DDB1C6FEE2300F4C20B /* SessionController.m */,
 				44353D981C6FEB2500F4C20B /* AppDelegate.h */,
 				44353D991C6FEB2500F4C20B /* AppDelegate.m */,
 				44353D9B1C6FEB2500F4C20B /* ViewController.h */,
@@ -118,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				44353D961C6FEB2500F4C20B /* main.m */,
+				44353DD91C6FED8D00F4C20B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -272,6 +291,7 @@
 			files = (
 				44353D9D1C6FEB2500F4C20B /* ViewController.m in Sources */,
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
+				44353DDC1C6FEE2300F4C20B /* SessionController.m in Sources */,
 				44353D971C6FEB2500F4C20B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +433,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = viewtestingremote/PrefixHeader.pch;
 				INFOPLIST_FILE = viewtestingremote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,6 +448,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = viewtestingremote/PrefixHeader.pch;
 				INFOPLIST_FILE = viewtestingremote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

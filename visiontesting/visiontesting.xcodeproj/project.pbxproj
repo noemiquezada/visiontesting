@@ -29,6 +29,10 @@
 		44353D831C6FE07C00F4C20B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D821C6FE07C00F4C20B /* libsqlite3.tbd */; };
 		44353D851C6FE45400F4C20B /* Parse in Resources */ = {isa = PBXBuildFile; fileRef = 44353D841C6FE45400F4C20B /* Parse */; };
 		44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D871C6FEA9500F4C20B /* PairingViewController.m */; };
+		44353DD01C6FEC7200F4C20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCF1C6FEC7100F4C20B /* UIKit.framework */; };
+		44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD11C6FEC7D00F4C20B /* Foundation.framework */; };
+		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
+		44353DDF1C6FEEAA00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DDE1C6FEEAA00F4C20B /* SessionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,12 @@
 		44353D841C6FE45400F4C20B /* Parse */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Parse; sourceTree = "<group>"; };
 		44353D861C6FEA9500F4C20B /* PairingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairingViewController.h; sourceTree = "<group>"; };
 		44353D871C6FEA9500F4C20B /* PairingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairingViewController.m; sourceTree = "<group>"; };
+		44353DCF1C6FEC7100F4C20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44353DD11C6FEC7D00F4C20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		44353DD51C6FECEB00F4C20B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		44353DDD1C6FEEAA00F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionController.h; path = ../../../playLoteria/playLoteria/SessionController.h; sourceTree = "<group>"; };
+		44353DDE1C6FEEAA00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionController.m; path = ../../../playLoteria/playLoteria/SessionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */,
+				44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */,
+				44353DD01C6FEC7200F4C20B /* UIKit.framework in Frameworks */,
 				44353D831C6FE07C00F4C20B /* libsqlite3.tbd in Frameworks */,
 				44353D811C6FE06F00F4C20B /* libz.tbd in Frameworks */,
 				44353D7F1C6FE06200F4C20B /* SystemConfiguration.framework in Frameworks */,
@@ -144,6 +157,8 @@
 		44353D361C6FD7CE00F4C20B /* visiontesting */ = {
 			isa = PBXGroup;
 			children = (
+				44353DDD1C6FEEAA00F4C20B /* SessionController.h */,
+				44353DDE1C6FEEAA00F4C20B /* SessionController.m */,
 				44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */,
 				44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */,
 				44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */,
@@ -163,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				44353D381C6FD7CE00F4C20B /* main.m */,
+				44353DD51C6FECEB00F4C20B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +204,9 @@
 		44353D6B1C6FDF7E00F4C20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */,
+				44353DD11C6FEC7D00F4C20B /* Foundation.framework */,
+				44353DCF1C6FEC7100F4C20B /* UIKit.framework */,
 				44353D821C6FE07C00F4C20B /* libsqlite3.tbd */,
 				44353D801C6FE06F00F4C20B /* libz.tbd */,
 				44353D7E1C6FE06200F4C20B /* SystemConfiguration.framework */,
@@ -338,6 +357,7 @@
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
+				44353DDF1C6FEEAA00F4C20B /* SessionController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +503,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = visiontesting/PrefixHeader.pch;
 				INFOPLIST_FILE = visiontesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +522,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = visiontesting/PrefixHeader.pch;
 				INFOPLIST_FILE = visiontesting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
