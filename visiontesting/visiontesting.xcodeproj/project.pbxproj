@@ -27,6 +27,7 @@
 		44353D7F1C6FE06200F4C20B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D7E1C6FE06200F4C20B /* SystemConfiguration.framework */; };
 		44353D811C6FE06F00F4C20B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D801C6FE06F00F4C20B /* libz.tbd */; };
 		44353D831C6FE07C00F4C20B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D821C6FE07C00F4C20B /* libsqlite3.tbd */; };
+		44353D851C6FE45400F4C20B /* Parse in Resources */ = {isa = PBXBuildFile; fileRef = 44353D841C6FE45400F4C20B /* Parse */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		44353D7E1C6FE06200F4C20B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		44353D801C6FE06F00F4C20B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		44353D821C6FE07C00F4C20B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		44353D841C6FE45400F4C20B /* Parse */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Parse; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		44353D2B1C6FD7CE00F4C20B = {
 			isa = PBXGroup;
 			children = (
+				44353D841C6FE45400F4C20B /* Parse */,
 				44353D6B1C6FDF7E00F4C20B /* Frameworks */,
 				44353D361C6FD7CE00F4C20B /* visiontesting */,
 				44353D501C6FD7CE00F4C20B /* visiontestingTests */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44353D851C6FE45400F4C20B /* Parse in Resources */,
 				44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */,
 				44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */,
