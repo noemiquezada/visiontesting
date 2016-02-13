@@ -32,7 +32,7 @@
 		44353DD01C6FEC7200F4C20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCF1C6FEC7100F4C20B /* UIKit.framework */; };
 		44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD11C6FEC7D00F4C20B /* Foundation.framework */; };
 		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
-		44353DDF1C6FEEAA00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DDE1C6FEEAA00F4C20B /* SessionController.m */; };
+		44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE11C6FF40E00F4C20B /* SessionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,8 @@
 		44353DD11C6FEC7D00F4C20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		44353DD51C6FECEB00F4C20B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		44353DDD1C6FEEAA00F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionController.h; path = ../../../playLoteria/playLoteria/SessionController.h; sourceTree = "<group>"; };
-		44353DDE1C6FEEAA00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionController.m; path = ../../../playLoteria/playLoteria/SessionController.m; sourceTree = "<group>"; };
+		44353DE01C6FF40E00F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
+		44353DE11C6FF40E00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +157,8 @@
 		44353D361C6FD7CE00F4C20B /* visiontesting */ = {
 			isa = PBXGroup;
 			children = (
-				44353DDD1C6FEEAA00F4C20B /* SessionController.h */,
-				44353DDE1C6FEEAA00F4C20B /* SessionController.m */,
+				44353DE01C6FF40E00F4C20B /* SessionController.h */,
+				44353DE11C6FF40E00F4C20B /* SessionController.m */,
 				44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */,
 				44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */,
 				44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */,
@@ -357,7 +357,7 @@
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
-				44353DDF1C6FEEAA00F4C20B /* SessionController.m in Sources */,
+				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
