@@ -39,6 +39,7 @@
 - (void)didFoundPeerNotification:(NSNotification *) notification {
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
         testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
+        [self continueTestAction:self];
     } else {
         testButton.titleLabel.text = @"Test";
     }

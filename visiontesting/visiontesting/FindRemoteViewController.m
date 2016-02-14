@@ -22,7 +22,7 @@
     [self.appDelegate.sessionController setupSession];
     [self.appDelegate.sessionController setupAdvertising];
     [self.appDelegate.sessionController.serviceAdvertiser startAdvertisingPeer];
-//    [self.appDelegate.sessionController advertiseSelf:YES];
+   //[self.appDelegate.sessionController advertiseSelf:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(peerChangedStateWithNotification:)
                                                  name:@"didChangeStateNotification"
@@ -39,6 +39,7 @@
             allPlayers = [allPlayers stringByAppendingString:@"\n"];
             allPlayers = [allPlayers stringByAppendingString:displayName];
         }
+        NSLog(@"Connected");
         NSLog(@"%@", allPlayers);
     }
 }
@@ -49,7 +50,8 @@
 }
 
 - (IBAction)exitTestAction:(id)sender {
-    [self.appDelegate.sessionController advertiseSelf:NO];
+    [self.appDelegate.sessionController.serviceAdvertiser stopAdvertisingPeer];
+    //[self.appDelegate.sessionController advertiseSelf:NO];
     [self.appDelegate.sessionController destroySession];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

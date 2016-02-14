@@ -5,7 +5,6 @@
 //  Created by App Development on 1/3/16.
 //  Copyright © 2016 App Development. All rights reserved.
 //
-@protocol SessionControllerDelegate;
 
 @interface SessionController : NSObject <MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate>
 

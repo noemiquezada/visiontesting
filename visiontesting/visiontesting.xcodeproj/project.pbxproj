@@ -34,6 +34,9 @@
 		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
 		44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE11C6FF40E00F4C20B /* SessionController.m */; };
 		44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */; };
+		44A0525F1C701DB70041BEAB /* DistanceAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */; };
+		44A052621C702B010041BEAB /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A052611C702B010041BEAB /* LocationController.m */; };
+		44A3B8A31C704DE3002299E5 /* RWTItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3B8A21C704DE3002299E5 /* RWTItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,12 @@
 		44353DE11C6FF40E00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 		44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRemoteViewController.h; sourceTree = "<group>"; };
 		44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRemoteViewController.m; sourceTree = "<group>"; };
+		44A0525D1C701DB70041BEAB /* DistanceAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceAnalyzerViewController.h; sourceTree = "<group>"; };
+		44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceAnalyzerViewController.m; sourceTree = "<group>"; };
+		44A052601C702B010041BEAB /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		44A052611C702B010041BEAB /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		44A3B8A11C704DE3002299E5 /* RWTItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTItem.h; sourceTree = "<group>"; };
+		44A3B8A21C704DE3002299E5 /* RWTItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,8 +182,14 @@
 				44353D371C6FD7CE00F4C20B /* Supporting Files */,
 				44353D861C6FEA9500F4C20B /* PairingViewController.h */,
 				44353D871C6FEA9500F4C20B /* PairingViewController.m */,
+				44A3B8A11C704DE3002299E5 /* RWTItem.h */,
+				44A3B8A21C704DE3002299E5 /* RWTItem.m */,
 				44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */,
 				44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */,
+				44A0525D1C701DB70041BEAB /* DistanceAnalyzerViewController.h */,
+				44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */,
+				44A052601C702B010041BEAB /* LocationController.h */,
+				44A052611C702B010041BEAB /* LocationController.m */,
 			);
 			path = visiontesting;
 			sourceTree = "<group>";
@@ -363,9 +378,12 @@
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
+				44A0525F1C701DB70041BEAB /* DistanceAnalyzerViewController.m in Sources */,
+				44A052621C702B010041BEAB /* LocationController.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
+				44A3B8A31C704DE3002299E5 /* RWTItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +631,7 @@
 				44353D631C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353D641C6FD7CF00F4C20B /* Build configuration list for PBXNativeTarget "visiontestingTests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +640,7 @@
 				44353D661C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353D671C6FD7CF00F4C20B /* Build configuration list for PBXNativeTarget "visiontestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +649,7 @@
 				44353D691C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
