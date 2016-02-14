@@ -16,6 +16,7 @@
 
 @synthesize testButton;
 @synthesize continueTestButton;
+@synthesize pulser;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +35,23 @@
                                              selector:@selector(didFoundPeerNotification:)
                                                  name:@"foundPeerNotification"
                                                object:nil];
+    //Animation loading for the pulsing radar
+    NSArray * imageArray  = [[NSArray alloc] initWithObjects:
+                             [UIImage imageNamed:@"pulse-1.png"],
+                             [UIImage imageNamed:@"pulse-2.png"],
+                             [UIImage imageNamed:@"pulse-3.png"],
+                             nil];
+//    NSArray * imageArray  = [[NSArray alloc] initWithObjects:
+//                             [UIImage imageNamed:@".png"],
+//                             nil];
+//    self.pulser = [[UIImageView alloc] initWithFrame:
+//                   CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
+    pulser.animationImages = imageArray;
+    pulser.animationDuration = 1.0;
+//    pulser.contentMode = UIViewContentModeCenter;
+//    pulser.contentMode = UIViewContentModeScaleAspectFit;
+//    [self.view addSubview:pulser];
+
 }
 
 - (void)didFoundPeerNotification:(NSNotification *) notification {
@@ -70,7 +88,9 @@
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
         [self.appDelegate.sessionController sendInvitationToPeer:[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0]];
     }
+    [self.pulser startAnimating];
 }
+
 
 - (IBAction)continueTestAction:(id)sender {
     [self performSegueWithIdentifier:@"continueGame" sender:self];
