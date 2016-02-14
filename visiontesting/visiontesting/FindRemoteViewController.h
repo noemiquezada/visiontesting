@@ -12,6 +12,7 @@
 @interface FindRemoteViewController : UIViewController
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
+@property (strong, nonatomic) IBOutlet UIImageView *pulser;
 - (IBAction)exitTestAction:(id)sender;
 
 @end

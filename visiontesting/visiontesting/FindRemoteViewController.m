@@ -13,6 +13,7 @@
 @end
 
 @implementation FindRemoteViewController
+@synthesize pulser;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +28,18 @@
                                              selector:@selector(peerChangedStateWithNotification:)
                                                  name:@"didChangeStateNotification"
                                                object:nil];
+    
+    //Animation loading for the pulsing radar
+    NSArray * imageArray  = [[NSArray alloc] initWithObjects:
+                             [UIImage imageNamed:@"pulse-1.png"],
+                             [UIImage imageNamed:@"pulse-2.png"],
+                             [UIImage imageNamed:@"pulse-3.png"],
+                             [UIImage imageNamed:@"pulse-4.png"],
+                             nil];
+    pulser.animationImages = imageArray;
+    pulser.animationDuration = 1.0;
+    
+    [pulser startAnimating];
 }
 
 - (void)peerChangedStateWithNotification:(NSNotification *)notification {

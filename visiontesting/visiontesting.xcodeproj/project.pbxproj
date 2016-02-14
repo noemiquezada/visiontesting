@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */; };
 		2A5AB5BD1C704E9500E35945 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BC1C704E9500E35945 /* SafariServices.framework */; };
-		2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */; settings = {ASSET_TAGS = (); }; };
+		2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */; };
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
@@ -37,6 +37,13 @@
 		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
 		44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE11C6FF40E00F4C20B /* SessionController.m */; };
 		44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */; };
+		65A2B5711C70716200347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56C1C70716200347275 /* inner.png */; };
+		65A2B5721C70716200347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56D1C70716200347275 /* pulse-1.png */; };
+		65A2B5731C70716200347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56E1C70716200347275 /* pulse-2.png */; };
+		65A2B5741C70716200347275 /* pulse-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56F1C70716200347275 /* pulse-3.png */; };
+		65A2B5751C70716200347275 /* pulse-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5701C70716200347275 /* pulse-4.png */; };
+		65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5781C7078B700347275 /* DistanceViewController.m */; };
+		65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57B1C70799200347275 /* AlphabetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +107,15 @@
 		44353DE11C6FF40E00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 		44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRemoteViewController.h; sourceTree = "<group>"; };
 		44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRemoteViewController.m; sourceTree = "<group>"; };
+		65A2B56C1C70716200347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
+		65A2B56D1C70716200347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
+		65A2B56E1C70716200347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
+		65A2B56F1C70716200347275 /* pulse-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-3.png"; sourceTree = "<group>"; };
+		65A2B5701C70716200347275 /* pulse-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-4.png"; sourceTree = "<group>"; };
+		65A2B5771C7078B700347275 /* DistanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceViewController.h; sourceTree = "<group>"; };
+		65A2B5781C7078B700347275 /* DistanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceViewController.m; sourceTree = "<group>"; };
+		65A2B57A1C70799200347275 /* AlphabetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphabetViewController.h; sourceTree = "<group>"; };
+		65A2B57B1C70799200347275 /* AlphabetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +192,10 @@
 				44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */,
 				44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */,
 				44353D401C6FD7CE00F4C20B /* Main.storyboard */,
+				65A2B57A1C70799200347275 /* AlphabetViewController.h */,
+				65A2B57B1C70799200347275 /* AlphabetViewController.m */,
+				65A2B5771C7078B700347275 /* DistanceViewController.h */,
+				65A2B5781C7078B700347275 /* DistanceViewController.m */,
 				44353D431C6FD7CE00F4C20B /* Assets.xcassets */,
 				44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */,
 				44353D481C6FD7CE00F4C20B /* Info.plist */,
@@ -186,6 +206,7 @@
 				44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */,
 				2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */,
 				2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */,
+				65A2B5761C7071A600347275 /* Photos */,
 			);
 			path = visiontesting;
 			sourceTree = "<group>";
@@ -239,6 +260,18 @@
 				44353D6D1C6FDFA400F4C20B /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65A2B5761C7071A600347275 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B56C1C70716200347275 /* inner.png */,
+				65A2B56D1C70716200347275 /* pulse-1.png */,
+				65A2B56E1C70716200347275 /* pulse-2.png */,
+				65A2B56F1C70716200347275 /* pulse-3.png */,
+				65A2B5701C70716200347275 /* pulse-4.png */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,10 +378,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B5751C70716200347275 /* pulse-4.png in Resources */,
 				44353D851C6FE45400F4C20B /* Parse in Resources */,
 				44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */,
+				65A2B5731C70716200347275 /* pulse-2.png in Resources */,
+				65A2B5721C70716200347275 /* pulse-1.png in Resources */,
+				65A2B5711C70716200347275 /* inner.png in Resources */,
 				44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */,
+				65A2B5741C70716200347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,11 +411,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */,
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
+				65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */,
 				2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);
