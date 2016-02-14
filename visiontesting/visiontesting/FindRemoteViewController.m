@@ -56,6 +56,8 @@
         }
         NSLog(@"Connected");
         NSLog(@"%@", allPlayers);
+        [self.appDelegate.sessionController stopAdvertising];
+        [self performSegueWithIdentifier:@"continueToDistanceAnalyzer" sender:self];
     }
 }
 

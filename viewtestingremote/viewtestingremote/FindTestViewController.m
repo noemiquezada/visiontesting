@@ -61,6 +61,7 @@
 //        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
         [pulser stopAnimating];
         [self showConfirmationAlert];
+        [self.appDelegate.sessionController stopBrowsing];
     } else {
         testButton.titleLabel.text = @"Test";
         [pulser stopAnimating];
@@ -115,7 +116,6 @@
     if (buttonIndex == 0) {
         //take them to start speaking with Alexa
         [self performSegueWithIdentifier:@"pairedSegue" sender:self];
-        [self.appDelegate.sessionController stopBrowsing];
     }
 }
 
