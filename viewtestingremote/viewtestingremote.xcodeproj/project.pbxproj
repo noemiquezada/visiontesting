@@ -19,6 +19,12 @@
 		44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCD1C6FEC4B00F4C20B /* Foundation.framework */; };
 		44353DE51C6FF45400F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE41C6FF45400F4C20B /* SessionController.m */; };
 		44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DEA1C70014E00F4C20B /* FindTestViewController.m */; };
+		65A2B55E1C701AE800347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5591C701AE800347275 /* inner.png */; };
+		65A2B55F1C701AE800347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55A1C701AE800347275 /* pulse-1.png */; };
+		65A2B5601C701AE800347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55B1C701AE800347275 /* pulse-2.png */; };
+		65A2B5611C701AE800347275 /* pulse-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55C1C701AE800347275 /* pulse-3.png */; };
+		65A2B5621C701AE800347275 /* pulse-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55D1C701AE800347275 /* pulse-4.png */; };
+		65A2B5661C702A0500347275 /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5651C702A0500347275 /* VoiceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,13 @@
 		44353DE41C6FF45400F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 		44353DE91C70014E00F4C20B /* FindTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTestViewController.h; sourceTree = "<group>"; };
 		44353DEA1C70014E00F4C20B /* FindTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTestViewController.m; sourceTree = "<group>"; };
+		65A2B5591C701AE800347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
+		65A2B55A1C701AE800347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
+		65A2B55B1C701AE800347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
+		65A2B55C1C701AE800347275 /* pulse-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-3.png"; sourceTree = "<group>"; };
+		65A2B55D1C701AE800347275 /* pulse-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-4.png"; sourceTree = "<group>"; };
+		65A2B5641C702A0500347275 /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceViewController.h; sourceTree = "<group>"; };
+		65A2B5651C702A0500347275 /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +135,12 @@
 				44353D981C6FEB2500F4C20B /* AppDelegate.h */,
 				44353D991C6FEB2500F4C20B /* AppDelegate.m */,
 				44353D9E1C6FEB2500F4C20B /* Main.storyboard */,
+				65A2B5641C702A0500347275 /* VoiceViewController.h */,
+				65A2B5651C702A0500347275 /* VoiceViewController.m */,
 				44353DA11C6FEB2500F4C20B /* Assets.xcassets */,
 				44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */,
 				44353DA61C6FEB2500F4C20B /* Info.plist */,
+				65A2B5671C7033FF00347275 /* Photos */,
 				44353D951C6FEB2500F4C20B /* Supporting Files */,
 				44353DE91C70014E00F4C20B /* FindTestViewController.h */,
 				44353DEA1C70014E00F4C20B /* FindTestViewController.m */,
@@ -157,6 +173,18 @@
 				44353DBC1C6FEB2500F4C20B /* Info.plist */,
 			);
 			path = viewtestingremoteUITests;
+			sourceTree = "<group>";
+		};
+		65A2B5671C7033FF00347275 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B5591C701AE800347275 /* inner.png */,
+				65A2B55A1C701AE800347275 /* pulse-1.png */,
+				65A2B55B1C701AE800347275 /* pulse-2.png */,
+				65A2B55C1C701AE800347275 /* pulse-3.png */,
+				65A2B55D1C701AE800347275 /* pulse-4.png */,
+			);
+			name = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +290,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B5621C701AE800347275 /* pulse-4.png in Resources */,
+				65A2B5601C701AE800347275 /* pulse-2.png in Resources */,
+				65A2B55E1C701AE800347275 /* inner.png in Resources */,
 				44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */,
 				44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */,
+				65A2B55F1C701AE800347275 /* pulse-1.png in Resources */,
+				65A2B5611C701AE800347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +326,7 @@
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
 				44353DE51C6FF45400F4C20B /* SessionController.m in Sources */,
 				44353D971C6FEB2500F4C20B /* main.m in Sources */,
+				65A2B5661C702A0500347275 /* VoiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +560,7 @@
 				44353DC11C6FEB2500F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353DC21C6FEB2500F4C20B /* Build configuration list for PBXNativeTarget "viewtestingremoteTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +569,7 @@
 				44353DC41C6FEB2500F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353DC51C6FEB2500F4C20B /* Build configuration list for PBXNativeTarget "viewtestingremoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +578,7 @@
 				44353DC71C6FEB2500F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
