@@ -9,13 +9,24 @@
 #import <UIKit/UIKit.h>
 #import "EyeObject.h"
 
-@interface AlphabetViewController : UIViewController
+@interface AlphabetViewController : UIViewController <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *letterLabel;
+@property (strong, nonatomic) IBOutlet UITextField *usersAnswerField;
+- (IBAction)submitPressed:(id)sender;
+
 
 
 
 
 - (NSString *)getRandomCharAsNString;
+//Initialize whether to start moving up or down
+//return 1 means that the user's vision testing will continue going DOWN
+//return 0 means that user's vision testing will continue going UP
+-(BOOL) moveUpOrDown:(int) level;
+-(EyeObject*)moveDownEyeChartWith:(EyeObject*) myVisionTest;
+-(EyeObject*)moveUpEyeChartWith:(EyeObject*) myVisionTest;
+- (NSString *) getEyeLevel:(int) level;
+-(int) getFontSize:(int) level;
 
 
 @end
