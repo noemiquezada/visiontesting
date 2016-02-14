@@ -133,7 +133,7 @@ static NSString * const sessionServiceType = @"evt";
                                 @"peerID": peerID };
     
     dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"Loteria_DidReceiveDataNotification"
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"didReceiveDataNotification"
                                                             object:nil
                                                           userInfo:userInfo];
     });

@@ -33,7 +33,6 @@
 //return 0 means that user's vision testing will continue going UP
 -(BOOL) moveUpOrDown:(int) level;
 -(EyeObject*)moveDownEyeChartWith:(EyeObject*) myVisionTest;
--(EyeObject*)moveUpEyeChartWith:(EyeObject*) myVisionTest;
 - (NSString *) getEyeLevel:(int) level;
 -(int) getFontSize:(int) level;
 

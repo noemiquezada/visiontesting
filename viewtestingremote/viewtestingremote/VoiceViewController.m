@@ -29,6 +29,7 @@
 -(void)sendAnswerWithResponse: (NSString *) response
 {
     //Send Message to send Ipad
+    NSLog(@"I am sending a response");
     NSString *messageToSend = [NSString stringWithFormat:@"%@", response];
     NSData *messageAsData = [messageToSend dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;

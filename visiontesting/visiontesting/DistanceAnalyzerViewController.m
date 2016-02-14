@@ -28,10 +28,10 @@
                                                  name:@"didChangeStateNotification"
                                                object:nil];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(handleReceivedDataWithNotification:)
-                                                 name:@"didReceiveDataNotification"
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(handleReceivedDataWithNotification:)
+//                                                 name:@"didReceiveDataNotification"
+//                                               object:nil];
     
     //[self requestLocation];
     

@@ -30,6 +30,11 @@
     counter=0;
    
     [self setRandomLetter:level];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleReceivedDataWithNotification:)
+                                                 name:@"didReceiveDataNotification"
+                                               object:nil];
 
 
 }
@@ -86,7 +91,7 @@ static void dumpAllFonts() {
     NSLog(@"vision score: %d", visionScore);
     if(testFinished==true){
         [letterLabel setFont: [UIFont boldSystemFontOfSize: 40]];
-        letterLabel.text=[NSString stringWithFormat:@"Your score is %@", [self getEyeLevel:myVisionExam.level]];
+        letterLabel.text=[NSString stringWithFormat:@"%@", [self getEyeLevel:myVisionExam.level]];
         
     }
     if (myVisionExam.level==5 && counter==5){
@@ -155,7 +160,7 @@ static void dumpAllFonts() {
 }
 - (NSString *) getEyeLevel:(int) alevel
 {
-    if(alevel == 1)
+    if(alevel == 1 || alevel == 0)
         return @"Your vision is 20/200";
     else if (alevel == 2)
         return @"Your vision is 20/100";
@@ -201,7 +206,7 @@ static void dumpAllFonts() {
 }
 - (NSString *)getRandomCharAsNString {
     //For better implementation, need to change so that there will not be duplicate letters
-    NSString *letters = @"ABDEFGHKLMNPQSTVXYZ";
+    NSString *letters = @"ADEFGHKLMNPQSTVX";
     NSInteger index = arc4random_uniform([letters length]);
     NSString *randomLetter = [letters substringWithRange:NSMakeRange(index, 1)];
     return randomLetter;
