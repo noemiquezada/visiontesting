@@ -46,7 +46,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)exitGameAction:(id)sender {
+- (IBAction)exitTestAction:(id)sender {
     [self.appDelegate.sessionController advertiseSelf:NO];
     [self.appDelegate.sessionController destroySession];
     [self dismissViewControllerAnimated:YES completion:nil];

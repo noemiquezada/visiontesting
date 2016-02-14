@@ -80,6 +80,9 @@
                                     <navigationItem id="dHU-xq-hR3">
                                         <barButtonItem key="leftBarButtonItem" systemItem="stop" id="GiU-lZ-iBR">
                                             <color key="tintColor" red="0.87058823529999996" green="0.33333333329999998" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="exitTestAction:" destination="OaO-JM-Hyr" id="9tx-id-w5F"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
