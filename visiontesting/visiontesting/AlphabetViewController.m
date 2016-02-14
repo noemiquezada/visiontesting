@@ -13,15 +13,28 @@
 @end
 
 @implementation AlphabetViewController
+@synthesize letterLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString *letter = @"A";
+    letter = [self getRandomCharAsNString];
+    letterLabel.text= [NSString stringWithFormat:@"%@", letter];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (NSString *)getRandomCharAsNString {
+    //For better implementation, need to change so that there will not be duplicate letters
+    NSString *letters = @"ABDEFGHKLMNPQSTVXYZ";
+    NSInteger index = arc4random_uniform([letters length]);
+    NSString *randomLetter = [letters substringWithRange:NSMakeRange(index, 1)];
+    return randomLetter;
 }
 
 /*

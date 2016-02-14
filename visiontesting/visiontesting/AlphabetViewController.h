@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EyeObject.h"
 
 @interface AlphabetViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *letterLabel;
 
+
+
+
+- (NSString *)getRandomCharAsNString;
+
+
 @end
+
+

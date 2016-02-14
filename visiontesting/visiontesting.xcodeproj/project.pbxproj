@@ -44,6 +44,7 @@
 		65A2B5751C70716200347275 /* pulse-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5701C70716200347275 /* pulse-4.png */; };
 		65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5781C7078B700347275 /* DistanceViewController.m */; };
 		65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57B1C70799200347275 /* AlphabetViewController.m */; };
+		65A2B57F1C707C1700347275 /* EyeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57E1C707C1700347275 /* EyeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,8 @@
 		65A2B5781C7078B700347275 /* DistanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceViewController.m; sourceTree = "<group>"; };
 		65A2B57A1C70799200347275 /* AlphabetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphabetViewController.h; sourceTree = "<group>"; };
 		65A2B57B1C70799200347275 /* AlphabetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetViewController.m; sourceTree = "<group>"; };
+		65A2B57D1C707C1700347275 /* EyeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeObject.h; sourceTree = "<group>"; };
+		65A2B57E1C707C1700347275 /* EyeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,7 @@
 		44353D361C6FD7CE00F4C20B /* visiontesting */ = {
 			isa = PBXGroup;
 			children = (
+				65A2B5801C707C1C00347275 /* Objects */,
 				44353DE01C6FF40E00F4C20B /* SessionController.h */,
 				44353DE11C6FF40E00F4C20B /* SessionController.m */,
 				44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */,
@@ -272,6 +276,15 @@
 				65A2B5701C70716200347275 /* pulse-4.png */,
 			);
 			name = Photos;
+			sourceTree = "<group>";
+		};
+		65A2B5801C707C1C00347275 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B57D1C707C1700347275 /* EyeObject.h */,
+				65A2B57E1C707C1700347275 /* EyeObject.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +430,7 @@
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
+				65A2B57F1C707C1700347275 /* EyeObject.m in Sources */,
 				65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */,
 				2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,

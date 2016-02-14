@@ -255,14 +255,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwC-SX-YJk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwC-SX-YJk">
                                 <rect key="frame" x="223" y="178" width="170" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="y9R-ot-T4T"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LwC-SX-YJk" firstAttribute="centerY" secondItem="khR-0u-1BX" secondAttribute="centerY" id="0yF-XB-Soe"/>
+                            <constraint firstItem="LwC-SX-YJk" firstAttribute="leading" secondItem="khR-0u-1BX" secondAttribute="leading" constant="223" id="qJv-vt-hje"/>
+                            <constraint firstItem="LwC-SX-YJk" firstAttribute="top" secondItem="Gky-Ip-ouW" secondAttribute="bottom" constant="158" id="uC8-4Q-TMe"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="letterLabel" destination="LwC-SX-YJk" id="X1P-ag-p0C"/>
