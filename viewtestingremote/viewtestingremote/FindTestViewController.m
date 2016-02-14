@@ -8,6 +8,7 @@
 
 #import "FindTestViewController.h"
 
+
 @interface FindTestViewController ()
 
 @end
@@ -48,8 +49,63 @@
 //    pulser.contentMode = UIViewContentModeScaleAspectFit;
 //    [self.view addSubview:pulser];
        [self.pulser startAnimating];
+    
 
+    
 }
+
+-(void)viewWillAppear:(BOOL)animated {
+    _skTransaction = nil;
+    self.languageCode = @"eng-USA";
+    
+    _skSession = [[SKSession alloc] initWithURL:[NSURL URLWithString:SKSServerUrl] appToken:SKSAppKey];
+    
+    if (!_skSession) {
+        UIAlertView* alertView = [[UIAlertView alloc]initWithTitle:@"SpeechKit"
+                                                           message:@"Failed to initialize SpeechKit session."
+                                                          delegate:nil cancelButtonTitle:@"OK"
+                                                 otherButtonTitles:nil, nil];
+        [alertView show];
+    }
+    if (!_skTransaction) {
+        NSLog(@"In skTranslaction initialization");
+        // Start a TTS transaction
+        _skTransaction = [_skSession speakString:@"Actively searching for Hubspot"
+                                    withLanguage:self.languageCode
+                                        delegate:self];
+        
+    } else {
+        // Cancel the TTS transaction
+        [_skTransaction cancel];
+        
+        [self resetTransaction];
+    }
+    [self performSelector:@selector(viewDidLoad) withObject:nil afterDelay:3.0];
+}
+
+-(void) createTransaction: (NSString *)s {
+    if (!_skTransaction) {
+        NSLog(@"In skTranslaction initialization");
+        // Start a TTS transaction
+        _skTransaction = [_skSession speakString:s
+                                    withLanguage:self.languageCode
+                                        delegate:self];
+        
+    } else {
+        // Cancel the TTS transaction
+        [_skTransaction cancel];
+        
+        [self resetTransaction];
+    }
+}
+
+
+    - (void)resetTransaction
+    {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            _skTransaction = nil;
+        }];
+    }
 
 - (void)didFoundPeerNotification:(NSNotification *) notification {
     NSLog(@"notification: %@", notification);
@@ -104,6 +160,7 @@
     [pulser startAnimating];
 }
 -(void)showConfirmationAlert{
+    [self createTransaction:@"Device Pairing Successful"];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
                                                     message:@""
                                                    delegate:self
@@ -123,6 +180,48 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark - SKTransactionDelegate
+
+- (void)transaction:(SKTransaction *)transaction didReceiveAudio:(SKAudio *)audio
+{
+    NSLog(@"didReceiveAudio");
+    
+    [self resetTransaction];
+}
+
+- (void)transaction:(SKTransaction *)transaction didFinishWithSuggestion:(NSString *)suggestion
+{
+    NSLog(@"didFinishWithSuggestion");
+    
+    // Notification of a successful transaction. Nothing to do here.
+}
+
+- (void)transaction:(SKTransaction *)transaction didFailWithError:(NSError *)error suggestion:(NSString *)suggestion
+{
+    NSLog(@"%@", [NSString stringWithFormat:@"didFailWithError: %@. %@", [error description], suggestion]);
+    
+    // Something went wrong. Check Configuration.mm to ensure that your settings are correct.
+    // The user could also be offline, so be sure to handle this case appropriately.
+    
+    [self resetTransaction];
+}
+
+#pragma mark - SKAudioPlayerDelegate
+
+- (void)audioPlayer:(SKAudioPlayer *)player willBeginPlaying:(SKAudio *)audio
+{
+    NSLog(@"willBeginPlaying");
+    
+    // The TTS Audio will begin playing.
+}
+
+- (void)audioPlayer:(SKAudioPlayer *)player didFinishPlaying:(SKAudio *)audio
+{
+    NSLog(@"didFinishPlaying");
+    
+    // The TTS Audio has finished playing.
+}
+
 
 
 

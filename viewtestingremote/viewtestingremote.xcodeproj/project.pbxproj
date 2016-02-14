@@ -25,6 +25,9 @@
 		44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3B8AC1C7088A2002299E5 /* LocationController.m */; };
 		44A3B8B31C70A8C5002299E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */; };
 		44A3B8B51C70A925002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B41C70A925002299E5 /* Main.storyboard */; };
+		44A3B8BB1C70B390002299E5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8BA1C70B390002299E5 /* AudioToolbox.framework */; };
+		44CC4A861C70B7C9002E0D06 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CC4A851C70B7C9002E0D06 /* SpeechKit.framework */; };
+		44CC4A8C1C70B9A6002E0D06 /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 44CC4A8B1C70B9A6002E0D06 /* SKSConfiguration.mm */; };
 		65A2B55E1C701AE800347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5591C701AE800347275 /* inner.png */; };
 		65A2B55F1C701AE800347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55A1C701AE800347275 /* pulse-1.png */; };
 		65A2B5601C701AE800347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55B1C701AE800347275 /* pulse-2.png */; };
@@ -83,6 +86,10 @@
 		44A3B8AC1C7088A2002299E5 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A3B8B41C70A925002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		44A3B8BA1C70B390002299E5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		44CC4A851C70B7C9002E0D06 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpeechKit.framework; sourceTree = "<group>"; };
+		44CC4A8A1C70B9A6002E0D06 /* SKSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
+		44CC4A8B1C70B9A6002E0D06 /* SKSConfiguration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKSConfiguration.mm; sourceTree = "<group>"; };
 		65A2B5591C701AE800347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
 		65A2B55A1C701AE800347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
 		65A2B55B1C701AE800347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
@@ -99,8 +106,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3B8BB1C70B390002299E5 /* AudioToolbox.framework in Frameworks */,
 				2AAB82AD1C7056710000B6F9 /* CoreGraphics.framework in Frameworks */,
 				2AAB82AB1C7056610000B6F9 /* SafariServices.framework in Frameworks */,
+				44CC4A861C70B7C9002E0D06 /* SpeechKit.framework in Frameworks */,
 				2AAB82A91C70565D0000B6F9 /* Security.framework in Frameworks */,
 				2AAB82A71C7056580000B6F9 /* LoginWithAmazon.framework in Frameworks */,
 				44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */,
@@ -129,6 +138,8 @@
 		44353D891C6FEB2500F4C20B = {
 			isa = PBXGroup;
 			children = (
+				44CC4A851C70B7C9002E0D06 /* SpeechKit.framework */,
+				44A3B8BA1C70B390002299E5 /* AudioToolbox.framework */,
 				2AAB82AC1C7056710000B6F9 /* CoreGraphics.framework */,
 				2AAB82AA1C7056610000B6F9 /* SafariServices.framework */,
 				2AAB82A81C70565D0000B6F9 /* Security.framework */,
@@ -179,6 +190,8 @@
 		44353D951C6FEB2500F4C20B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				44CC4A8A1C70B9A6002E0D06 /* SKSConfiguration.h */,
+				44CC4A8B1C70B9A6002E0D06 /* SKSConfiguration.mm */,
 				44A3B8AB1C7088A2002299E5 /* LocationController.h */,
 				44A3B8AC1C7088A2002299E5 /* LocationController.m */,
 				44353D961C6FEB2500F4C20B /* main.m */,
@@ -358,6 +371,7 @@
 			files = (
 				2AAB82B01C7058500000B6F9 /* AlexaViewController.m in Sources */,
 				44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */,
+				44CC4A8C1C70B9A6002E0D06 /* SKSConfiguration.mm in Sources */,
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
 				44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */,
 				44353DE51C6FF45400F4C20B /* SessionController.m in Sources */,

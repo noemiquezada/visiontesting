@@ -40,13 +40,13 @@
                         <constraints>
                             <constraint firstItem="l7X-vo-8f5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="1hI-41-6eq"/>
                             <constraint firstItem="DI9-GQ-zQ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3eV-fp-U0v"/>
-                            <constraint firstItem="l7X-vo-8f5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sh-Y3-6Kw"/>
+                            <constraint firstItem="l7X-vo-8f5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" placeholder="YES" id="4sh-Y3-6Kw"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="centerX" secondItem="DI9-GQ-zQ6" secondAttribute="centerX" id="6Dz-C7-odx"/>
                             <constraint firstItem="DI9-GQ-zQ6" firstAttribute="top" secondItem="l7X-vo-8f5" secondAttribute="bottom" constant="48" id="6QG-fS-Udk"/>
-                            <constraint firstItem="DI9-GQ-zQ6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8D0-dR-ILX"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="top" secondItem="DI9-GQ-zQ6" secondAttribute="bottom" constant="-153" id="93Y-1s-U39"/>
                             <constraint firstItem="DI9-GQ-zQ6" firstAttribute="top" secondItem="kLx-to-9Yi" secondAttribute="bottom" constant="-166" id="H0X-jZ-LSD"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="294" id="I8k-rt-l5f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DI9-GQ-zQ6" secondAttribute="bottom" constant="166" id="IJT-O1-fQE"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="centerY" secondItem="DI9-GQ-zQ6" secondAttribute="centerY" id="MLB-9D-Htq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DI9-GQ-zQ6" secondAttribute="trailing" constant="145" id="RHi-5q-VyH"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="centerX" secondItem="DI9-GQ-zQ6" secondAttribute="centerX" id="X0I-FG-arU"/>
@@ -57,11 +57,9 @@
                             <constraint firstItem="DI9-GQ-zQ6" firstAttribute="centerY" secondItem="kLx-to-9Yi" secondAttribute="centerY" id="d92-US-hGL"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oyM-o3-mv3"/>
                             <constraint firstItem="l7X-vo-8f5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="qdw-jN-CEn"/>
-                            <constraint firstItem="DI9-GQ-zQ6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="qiD-jC-dUu"/>
                             <constraint firstItem="DI9-GQ-zQ6" firstAttribute="centerX" secondItem="kLx-to-9Yi" secondAttribute="centerX" constant="-0.5" id="rSU-mt-Qm5"/>
-                            <constraint firstItem="DI9-GQ-zQ6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="145" id="rfF-0m-TP3"/>
                             <constraint firstItem="kLx-to-9Yi" firstAttribute="centerX" secondItem="DI9-GQ-zQ6" secondAttribute="centerX" id="s1p-Rk-5FD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DI9-GQ-zQ6" secondAttribute="trailing" constant="144" id="zJy-n1-qE4"/>
+                            <constraint firstItem="kLx-to-9Yi" firstAttribute="centerX" secondItem="l7X-vo-8f5" secondAttribute="centerX" id="sZr-xq-YhQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -83,6 +81,7 @@
                     </view>
                     <connections>
                         <outlet property="pulser" destination="DI9-GQ-zQ6" id="Sz8-af-YQ2"/>
+                        <segue destination="vam-av-cou" kind="modal" identifier="pairedSegue" id="JD6-qF-JYb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,8 +131,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="To record your answer, hold down the button." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-ou-ThW">
-                                <rect key="frame" x="69" y="98" width="462" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="To record your answer, hold down the button." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSV-ou-ThW">
+                                <rect key="frame" x="69" y="98" width="462" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="FmZ-pO-BEK"/>
                                     <constraint firstAttribute="height" constant="21" id="oEL-5h-gYB"/>
@@ -156,7 +155,6 @@
                                     <constraint firstAttribute="width" constant="252" id="KFa-Ur-FAF"/>
                                     <constraint firstAttribute="height" constant="260" id="QXP-Pw-ub0"/>
                                     <constraint firstAttribute="height" constant="250" id="ZcQ-5a-rFo"/>
-                                    <constraint firstAttribute="width" constant="262" id="se6-Vv-ocx"/>
                                     <constraint firstAttribute="width" secondItem="s32-2J-lwp" secondAttribute="height" multiplier="131:130" id="se9-os-WPG"/>
                                 </constraints>
                                 <state key="normal" image="speakButton.png"/>
@@ -202,6 +200,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="cGB-gI-B0w"/>
                     <connections>
                         <outlet property="microphoneButton" destination="s32-2J-lwp" id="MYV-5R-k9S"/>
                     </connections>
