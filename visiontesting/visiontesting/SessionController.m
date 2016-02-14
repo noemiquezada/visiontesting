@@ -210,6 +210,7 @@ static NSString * const sessionServiceType = @"evt";
     });
 }
 
+
 - (void)browser:(MCNearbyServiceBrowser *)browser didNotStartBrowsingForPeers:(NSError *)error {
     NSLog(@"didNotStartBrowsingForPeers: %@", error);
 }

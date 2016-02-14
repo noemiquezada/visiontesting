@@ -14,9 +14,7 @@
 		2AAB82B01C7058500000B6F9 /* AlexaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB82AF1C7058500000B6F9 /* AlexaViewController.m */; };
 		44353D971C6FEB2500F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D961C6FEB2500F4C20B /* main.m */; };
 		44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D991C6FEB2500F4C20B /* AppDelegate.m */; };
-		44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D9E1C6FEB2500F4C20B /* Main.storyboard */; };
 		44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA11C6FEB2500F4C20B /* Assets.xcassets */; };
-		44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */; };
 		44353DB01C6FEB2500F4C20B /* viewtestingremoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DAF1C6FEB2500F4C20B /* viewtestingremoteTests.m */; };
 		44353DBB1C6FEB2500F4C20B /* viewtestingremoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DBA1C6FEB2500F4C20B /* viewtestingremoteUITests.m */; };
 		44353DCA1C6FEC3100F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */; };
@@ -24,6 +22,9 @@
 		44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCD1C6FEC4B00F4C20B /* Foundation.framework */; };
 		44353DE51C6FF45400F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE41C6FF45400F4C20B /* SessionController.m */; };
 		44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DEA1C70014E00F4C20B /* FindTestViewController.m */; };
+		44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3B8AC1C7088A2002299E5 /* LocationController.m */; };
+		44A3B8B31C70A8C5002299E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */; };
+		44A3B8B51C70A925002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B41C70A925002299E5 /* Main.storyboard */; };
 		65A2B55E1C701AE800347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5591C701AE800347275 /* inner.png */; };
 		65A2B55F1C701AE800347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55A1C701AE800347275 /* pulse-1.png */; };
 		65A2B5601C701AE800347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55B1C701AE800347275 /* pulse-2.png */; };
@@ -62,9 +63,7 @@
 		44353D961C6FEB2500F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D981C6FEB2500F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44353D991C6FEB2500F4C20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44353D9F1C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44353DA11C6FEB2500F4C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44353DA41C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44353DA61C6FEB2500F4C20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44353DAB1C6FEB2500F4C20B /* viewtestingremoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewtestingremoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353DAF1C6FEB2500F4C20B /* viewtestingremoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewtestingremoteTests.m; sourceTree = "<group>"; };
@@ -80,6 +79,10 @@
 		44353DE41C6FF45400F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 		44353DE91C70014E00F4C20B /* FindTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTestViewController.h; sourceTree = "<group>"; };
 		44353DEA1C70014E00F4C20B /* FindTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTestViewController.m; sourceTree = "<group>"; };
+		44A3B8AB1C7088A2002299E5 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		44A3B8AC1C7088A2002299E5 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44A3B8B41C70A925002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		65A2B5591C701AE800347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
 		65A2B55A1C701AE800347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
 		65A2B55B1C701AE800347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
@@ -157,11 +160,11 @@
 				44353DE41C6FF45400F4C20B /* SessionController.m */,
 				44353D981C6FEB2500F4C20B /* AppDelegate.h */,
 				44353D991C6FEB2500F4C20B /* AppDelegate.m */,
-				44353D9E1C6FEB2500F4C20B /* Main.storyboard */,
+				44A3B8B41C70A925002299E5 /* Main.storyboard */,
+				44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */,
 				65A2B5641C702A0500347275 /* VoiceViewController.h */,
 				65A2B5651C702A0500347275 /* VoiceViewController.m */,
 				44353DA11C6FEB2500F4C20B /* Assets.xcassets */,
-				44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */,
 				44353DA61C6FEB2500F4C20B /* Info.plist */,
 				65A2B5671C7033FF00347275 /* Photos */,
 				44353D951C6FEB2500F4C20B /* Supporting Files */,
@@ -176,6 +179,8 @@
 		44353D951C6FEB2500F4C20B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				44A3B8AB1C7088A2002299E5 /* LocationController.h */,
+				44A3B8AC1C7088A2002299E5 /* LocationController.m */,
 				44353D961C6FEB2500F4C20B /* main.m */,
 				44353DD91C6FED8D00F4C20B /* PrefixHeader.pch */,
 			);
@@ -321,11 +326,11 @@
 				65A2B5621C701AE800347275 /* pulse-4.png in Resources */,
 				65A2B5601C701AE800347275 /* pulse-2.png in Resources */,
 				65A2B55E1C701AE800347275 /* inner.png in Resources */,
-				44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */,
 				65A2B56B1C70663000347275 /* speakButton@2x.png in Resources */,
 				44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */,
-				44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */,
+				44A3B8B51C70A925002299E5 /* Main.storyboard in Resources */,
 				65A2B55F1C701AE800347275 /* pulse-1.png in Resources */,
+				44A3B8B31C70A8C5002299E5 /* LaunchScreen.storyboard in Resources */,
 				65A2B5611C701AE800347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +359,7 @@
 				2AAB82B01C7058500000B6F9 /* AlexaViewController.m in Sources */,
 				44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */,
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
+				44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */,
 				44353DE51C6FF45400F4C20B /* SessionController.m in Sources */,
 				44353D971C6FEB2500F4C20B /* main.m in Sources */,
 				65A2B5661C702A0500347275 /* VoiceViewController.m in Sources */,
@@ -390,25 +396,6 @@
 			targetProxy = 44353DB71C6FEB2500F4C20B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		44353D9E1C6FEB2500F4C20B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353D9F1C6FEB2500F4C20B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353DA41C6FEB2500F4C20B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		44353DBD1C6FEB2500F4C20B /* Debug */ = {

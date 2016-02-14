@@ -35,6 +35,7 @@
                                              selector:@selector(didFoundPeerNotification:)
                                                  name:@"foundPeerNotification"
                                                object:nil];
+
     //Animation loading for the pulsing radar
     NSArray * imageArray  = [[NSArray alloc] initWithObjects:
                              [UIImage imageNamed:@"pulse-1.png"],
@@ -43,14 +44,24 @@
                              nil];
     pulser.animationImages = imageArray;
     pulser.animationDuration = 1.0;
+//    pulser.contentMode = UIViewContentModeCenter;
+//    pulser.contentMode = UIViewContentModeScaleAspectFit;
+//    [self.view addSubview:pulser];
+       [self.pulser startAnimating];
 
 }
 
 - (void)didFoundPeerNotification:(NSNotification *) notification {
+    NSLog(@"notification: %@", notification);
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
+        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
+        [self.appDelegate.sessionController sendInvitationToPeer:[[notification userInfo] objectForKey:@"peerID"]];
+        testButton.titleLabel.text = @"Ipad";
+        
 //        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
         [pulser stopAnimating];
         [self showConfirmationAlert];
+        [self.appDelegate.sessionController stopBrowsing];
     } else {
         testButton.titleLabel.text = @"Test";
         [pulser stopAnimating];
@@ -70,7 +81,7 @@
             allTests = [allTests stringByAppendingString:displayName];
         }
         NSLog(@"%@", allTests);
-    }
+    } 
 }
 
 - (IBAction)exitTestAction:(id)sender {
@@ -80,6 +91,13 @@
 }
 
 - (IBAction)joinTestAction:(id)sender {
+
+ 
+}
+
+
+- (IBAction)continueTestAction:(id)sender {
+  //  [self performSegueWithIdentifier:@"continueGame" sender:self];
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
         [self.appDelegate.sessionController sendInvitationToPeer:[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0]];
     }

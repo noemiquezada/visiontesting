@@ -7,6 +7,7 @@
 //
 
 #import "FindRemoteViewController.h"
+#import "LocationController.h"
 
 @interface FindRemoteViewController ()
 
@@ -23,11 +24,12 @@
     [self.appDelegate.sessionController setupSession];
     [self.appDelegate.sessionController setupAdvertising];
     [self.appDelegate.sessionController.serviceAdvertiser startAdvertisingPeer];
-//    [self.appDelegate.sessionController advertiseSelf:YES];
+   //[self.appDelegate.sessionController advertiseSelf:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(peerChangedStateWithNotification:)
                                                  name:@"didChangeStateNotification"
                                                object:nil];
+
     
     //Animation loading for the pulsing radar
     NSArray * imageArray  = [[NSArray alloc] initWithObjects:
@@ -52,7 +54,10 @@
             allPlayers = [allPlayers stringByAppendingString:@"\n"];
             allPlayers = [allPlayers stringByAppendingString:displayName];
         }
+        NSLog(@"Connected");
         NSLog(@"%@", allPlayers);
+        [self.appDelegate.sessionController stopAdvertising];
+        [self performSegueWithIdentifier:@"continueToDistanceAnalyzer" sender:self];
     }
 }
 
@@ -62,7 +67,8 @@
 }
 
 - (IBAction)exitTestAction:(id)sender {
-    [self.appDelegate.sessionController advertiseSelf:NO];
+    [self.appDelegate.sessionController.serviceAdvertiser stopAdvertisingPeer];
+    //[self.appDelegate.sessionController advertiseSelf:NO];
     [self.appDelegate.sessionController destroySession];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

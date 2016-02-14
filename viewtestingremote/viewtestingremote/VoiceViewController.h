@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 
 @interface VoiceViewController : UIViewController
 
+@property (strong, nonatomic) AppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIButton *microphoneButton;
 - (IBAction)speakNow:(id)sender;
 

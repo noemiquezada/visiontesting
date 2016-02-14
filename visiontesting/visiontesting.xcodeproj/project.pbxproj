@@ -13,7 +13,6 @@
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
-		44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D401C6FD7CE00F4C20B /* Main.storyboard */; };
 		44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44353D431C6FD7CE00F4C20B /* Assets.xcassets */; };
 		44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */; };
 		44353D521C6FD7CE00F4C20B /* visiontestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D511C6FD7CE00F4C20B /* visiontestingTests.m */; };
@@ -31,12 +30,16 @@
 		44353D811C6FE06F00F4C20B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D801C6FE06F00F4C20B /* libz.tbd */; };
 		44353D831C6FE07C00F4C20B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353D821C6FE07C00F4C20B /* libsqlite3.tbd */; };
 		44353D851C6FE45400F4C20B /* Parse in Resources */ = {isa = PBXBuildFile; fileRef = 44353D841C6FE45400F4C20B /* Parse */; };
-		44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D871C6FEA9500F4C20B /* PairingViewController.m */; };
 		44353DD01C6FEC7200F4C20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCF1C6FEC7100F4C20B /* UIKit.framework */; };
 		44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD11C6FEC7D00F4C20B /* Foundation.framework */; };
 		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
 		44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE11C6FF40E00F4C20B /* SessionController.m */; };
 		44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */; };
+		44A0525F1C701DB70041BEAB /* DistanceAnalyzerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */; };
+		44A052621C702B010041BEAB /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A052611C702B010041BEAB /* LocationController.m */; };
+		44A3B8A81C7064AA002299E5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A71C7064AA002299E5 /* MapKit.framework */; };
+		44A3B8AA1C7070D9002299E5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */; };
+		44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8AE1C70A684002299E5 /* Main.storyboard */; };
 		65A2B5711C70716200347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56C1C70716200347275 /* inner.png */; };
 		65A2B5721C70716200347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56D1C70716200347275 /* pulse-1.png */; };
 		65A2B5731C70716200347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56E1C70716200347275 /* pulse-2.png */; };
@@ -75,7 +78,6 @@
 		44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
 		44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
-		44353D411C6FD7CE00F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44353D431C6FD7CE00F4C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44353D461C6FD7CE00F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44353D481C6FD7CE00F4C20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +100,6 @@
 		44353D801C6FE06F00F4C20B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		44353D821C6FE07C00F4C20B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		44353D841C6FE45400F4C20B /* Parse */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Parse; sourceTree = "<group>"; };
-		44353D861C6FEA9500F4C20B /* PairingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairingViewController.h; sourceTree = "<group>"; };
-		44353D871C6FEA9500F4C20B /* PairingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairingViewController.m; sourceTree = "<group>"; };
 		44353DCF1C6FEC7100F4C20B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		44353DD11C6FEC7D00F4C20B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
@@ -108,6 +108,13 @@
 		44353DE11C6FF40E00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
 		44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRemoteViewController.h; sourceTree = "<group>"; };
 		44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRemoteViewController.m; sourceTree = "<group>"; };
+		44A0525D1C701DB70041BEAB /* DistanceAnalyzerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceAnalyzerViewController.h; sourceTree = "<group>"; };
+		44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceAnalyzerViewController.m; sourceTree = "<group>"; };
+		44A052601C702B010041BEAB /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		44A052611C702B010041BEAB /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		44A3B8A71C7064AA002299E5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		44A3B8AE1C70A684002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		65A2B56C1C70716200347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
 		65A2B56D1C70716200347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
 		65A2B56E1C70716200347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
@@ -126,6 +133,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3B8AA1C7070D9002299E5 /* CoreBluetooth.framework in Frameworks */,
+				44A3B8A81C7064AA002299E5 /* MapKit.framework in Frameworks */,
 				44353D751C6FE04000F4C20B /* CoreGraphics.framework in Frameworks */,
 				2A5AB5BD1C704E9500E35945 /* SafariServices.framework in Frameworks */,
 				44353D7B1C6FE05400F4C20B /* Security.framework in Frameworks */,
@@ -190,12 +199,12 @@
 			children = (
 				65A2B5801C707C1C00347275 /* Objects */,
 				44353DE01C6FF40E00F4C20B /* SessionController.h */,
+				44A3B8AE1C70A684002299E5 /* Main.storyboard */,
 				44353DE11C6FF40E00F4C20B /* SessionController.m */,
 				44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */,
 				44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */,
 				44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */,
 				44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */,
-				44353D401C6FD7CE00F4C20B /* Main.storyboard */,
 				65A2B57A1C70799200347275 /* AlphabetViewController.h */,
 				65A2B57B1C70799200347275 /* AlphabetViewController.m */,
 				65A2B5771C7078B700347275 /* DistanceViewController.h */,
@@ -204,10 +213,12 @@
 				44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */,
 				44353D481C6FD7CE00F4C20B /* Info.plist */,
 				44353D371C6FD7CE00F4C20B /* Supporting Files */,
-				44353D861C6FEA9500F4C20B /* PairingViewController.h */,
-				44353D871C6FEA9500F4C20B /* PairingViewController.m */,
 				44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */,
 				44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */,
+				44A0525D1C701DB70041BEAB /* DistanceAnalyzerViewController.h */,
+				44A0525E1C701DB70041BEAB /* DistanceAnalyzerViewController.m */,
+				44A052601C702B010041BEAB /* LocationController.h */,
+				44A052611C702B010041BEAB /* LocationController.m */,
 				2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */,
 				2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */,
 				65A2B5761C7071A600347275 /* Photos */,
@@ -245,6 +256,8 @@
 		44353D6B1C6FDF7E00F4C20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */,
+				44A3B8A71C7064AA002299E5 /* MapKit.framework */,
 				2A5AB5BC1C704E9500E35945 /* SafariServices.framework */,
 				2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */,
 				44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */,
@@ -392,13 +405,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65A2B5751C70716200347275 /* pulse-4.png in Resources */,
+				44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */,
 				44353D851C6FE45400F4C20B /* Parse in Resources */,
 				44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */,
 				65A2B5731C70716200347275 /* pulse-2.png in Resources */,
 				65A2B5721C70716200347275 /* pulse-1.png in Resources */,
 				65A2B5711C70716200347275 /* inner.png in Resources */,
-				44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */,
 				65A2B5741C70716200347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,12 +441,13 @@
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
+				44A0525F1C701DB70041BEAB /* DistanceAnalyzerViewController.m in Sources */,
+				44A052621C702B010041BEAB /* LocationController.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
 				65A2B57F1C707C1700347275 /* EyeObject.m in Sources */,
 				65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */,
 				2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */,
-				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,14 +483,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44353D401C6FD7CE00F4C20B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353D411C6FD7CE00F4C20B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
