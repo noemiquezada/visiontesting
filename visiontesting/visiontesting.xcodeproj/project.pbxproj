@@ -33,6 +33,7 @@
 		44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD11C6FEC7D00F4C20B /* Foundation.framework */; };
 		44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */; };
 		44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE11C6FF40E00F4C20B /* SessionController.m */; };
+		44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		44353DD51C6FECEB00F4C20B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		44353DE01C6FF40E00F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
 		44353DE11C6FF40E00F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
+		44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindRemoteViewController.h; sourceTree = "<group>"; };
+		44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindRemoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +173,8 @@
 				44353D371C6FD7CE00F4C20B /* Supporting Files */,
 				44353D861C6FEA9500F4C20B /* PairingViewController.h */,
 				44353D871C6FEA9500F4C20B /* PairingViewController.m */,
+				44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */,
+				44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */,
 			);
 			path = visiontesting;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
+				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);

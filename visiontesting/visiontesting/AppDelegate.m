@@ -28,6 +28,10 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    //Initiate Session Controller
+    self.sessionController = [SessionController sharedSessionController];
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    
     return YES;
 }
 
