@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "SessionController.h"
+#import "LocationController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) SessionController *sessionController;
+@property (nonatomic, strong) LocationController * locationController; 
 
 
 @end
