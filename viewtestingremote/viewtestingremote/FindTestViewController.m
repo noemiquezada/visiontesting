@@ -162,12 +162,15 @@
 }
 -(void)showConfirmationAlert{
     [self createTransaction:@"Device Pairing Successful"];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
-                                                    message:@""
-                                                   delegate:self
-                                          cancelButtonTitle:@"Continue"
-                                          otherButtonTitles:nil];
-    [alert show];
+    if([self.appDelegate.sessionController.foundPeersArray count] == 1) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
+                                                        message:@""
+                                                       delegate:self
+                                              cancelButtonTitle:@"Continue"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+
 }
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     // the user clicked continue
