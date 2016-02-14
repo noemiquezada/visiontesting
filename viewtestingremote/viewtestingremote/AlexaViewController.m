@@ -10,4 +10,6 @@
 
 @implementation AlexaViewController
 
+- (IBAction)onLoginButtonClicked:(id)sender {
+}
 @end

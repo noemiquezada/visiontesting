@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LoginWithAmazon/LoginWithAmazon.h>
 
 @interface AlexaViewController : UIViewController
+
+- (IBAction)onLoginButtonClicked:(id)sender;
 
 @end
