@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.sessionController = [SessionController sharedSessionController];
+    [UIApplication sharedApplication].idleTimerDisabled = YES;
     return YES;
 }
 

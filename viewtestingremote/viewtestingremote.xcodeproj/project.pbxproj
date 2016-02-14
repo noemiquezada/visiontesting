@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		44353D971C6FEB2500F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D961C6FEB2500F4C20B /* main.m */; };
 		44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D991C6FEB2500F4C20B /* AppDelegate.m */; };
-		44353D9D1C6FEB2500F4C20B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D9C1C6FEB2500F4C20B /* ViewController.m */; };
 		44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D9E1C6FEB2500F4C20B /* Main.storyboard */; };
 		44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA11C6FEB2500F4C20B /* Assets.xcassets */; };
 		44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		44353DCC1C6FEC4300F4C20B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCB1C6FEC4300F4C20B /* UIKit.framework */; };
 		44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DCD1C6FEC4B00F4C20B /* Foundation.framework */; };
 		44353DE51C6FF45400F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE41C6FF45400F4C20B /* SessionController.m */; };
+		44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DEA1C70014E00F4C20B /* FindTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +43,6 @@
 		44353D961C6FEB2500F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D981C6FEB2500F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44353D991C6FEB2500F4C20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44353D9B1C6FEB2500F4C20B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		44353D9C1C6FEB2500F4C20B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		44353D9F1C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44353DA11C6FEB2500F4C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44353DA41C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +59,8 @@
 		44353DD91C6FED8D00F4C20B /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		44353DE31C6FF45400F4C20B /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
 		44353DE41C6FF45400F4C20B /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
+		44353DE91C70014E00F4C20B /* FindTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindTestViewController.h; sourceTree = "<group>"; };
+		44353DEA1C70014E00F4C20B /* FindTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +121,13 @@
 				44353DE41C6FF45400F4C20B /* SessionController.m */,
 				44353D981C6FEB2500F4C20B /* AppDelegate.h */,
 				44353D991C6FEB2500F4C20B /* AppDelegate.m */,
-				44353D9B1C6FEB2500F4C20B /* ViewController.h */,
-				44353D9C1C6FEB2500F4C20B /* ViewController.m */,
 				44353D9E1C6FEB2500F4C20B /* Main.storyboard */,
 				44353DA11C6FEB2500F4C20B /* Assets.xcassets */,
 				44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */,
 				44353DA61C6FEB2500F4C20B /* Info.plist */,
 				44353D951C6FEB2500F4C20B /* Supporting Files */,
+				44353DE91C70014E00F4C20B /* FindTestViewController.h */,
+				44353DEA1C70014E00F4C20B /* FindTestViewController.m */,
 			);
 			path = viewtestingremote;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44353D9D1C6FEB2500F4C20B /* ViewController.m in Sources */,
+				44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */,
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
 				44353DE51C6FF45400F4C20B /* SessionController.m in Sources */,
 				44353D971C6FEB2500F4C20B /* main.m in Sources */,
