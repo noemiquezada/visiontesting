@@ -48,6 +48,7 @@
 		65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5781C7078B700347275 /* DistanceViewController.m */; };
 		65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57B1C70799200347275 /* AlphabetViewController.m */; };
 		65A2B57F1C707C1700347275 /* EyeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57E1C707C1700347275 /* EyeObject.m */; };
+		65A2B5821C70D7A200347275 /* rockwell.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5811C70D78A00347275 /* rockwell.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		65A2B57B1C70799200347275 /* AlphabetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetViewController.m; sourceTree = "<group>"; };
 		65A2B57D1C707C1700347275 /* EyeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeObject.h; sourceTree = "<group>"; };
 		65A2B57E1C707C1700347275 /* EyeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeObject.m; sourceTree = "<group>"; };
+		65A2B5811C70D78A00347275 /* rockwell.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = rockwell.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				44A052611C702B010041BEAB /* LocationController.m */,
 				2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */,
 				2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */,
+				65A2B5831C70DA0300347275 /* Resources */,
 				65A2B5761C7071A600347275 /* Photos */,
 			);
 			path = visiontesting;
@@ -298,6 +301,14 @@
 				65A2B57E1C707C1700347275 /* EyeObject.m */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		65A2B5831C70DA0300347275 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B5811C70D78A00347275 /* rockwell.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B5821C70D7A200347275 /* rockwell.ttf in Resources */,
 				65A2B5751C70716200347275 /* pulse-4.png in Resources */,
 				44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */,
 				44353D851C6FE45400F4C20B /* Parse in Resources */,

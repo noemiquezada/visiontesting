@@ -238,7 +238,7 @@ stepping back with your remote.
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2f-lc-TdE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2f-lc-TdE">
                                 <rect key="frame" x="259" y="198" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="8dg-d5-KVF"/>
@@ -253,7 +253,7 @@ stepping back with your remote.
                                     <action selector="submitPressed:" destination="hFo-QL-Zz6" eventType="touchUpInside" id="vWH-dZ-dwz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwC-SX-YJk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwC-SX-YJk">
                                 <rect key="frame" x="222" y="10" width="170" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="lpe-Oi-3SF"/>
@@ -272,17 +272,21 @@ stepping back with your remote.
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="amg-lh-q2g" firstAttribute="top" secondItem="Gky-Ip-ouW" secondAttribute="bottom" constant="178" id="10p-CX-1mo"/>
+                            <constraint firstItem="s2f-lc-TdE" firstAttribute="top" secondItem="LwC-SX-YJk" secondAttribute="bottom" constant="19" id="1ME-4G-Kex"/>
+                            <constraint firstItem="s2f-lc-TdE" firstAttribute="leading" secondItem="khR-0u-1BX" secondAttribute="leadingMargin" constant="239" id="6OY-So-T84"/>
                             <constraint firstItem="LwC-SX-YJk" firstAttribute="leading" secondItem="khR-0u-1BX" secondAttribute="leading" constant="222" id="C7A-ck-N41"/>
                             <constraint firstItem="s2f-lc-TdE" firstAttribute="centerX" secondItem="LwC-SX-YJk" secondAttribute="centerX" id="Gwk-Kq-Q5a"/>
                             <constraint firstItem="LwC-SX-YJk" firstAttribute="top" secondItem="khR-0u-1BX" secondAttribute="topMargin" constant="10" id="IEZ-Rh-hdX"/>
+                            <constraint firstItem="LwC-SX-YJk" firstAttribute="leading" secondItem="khR-0u-1BX" secondAttribute="leadingMargin" constant="202" id="NE9-Bc-5O7"/>
                             <constraint firstItem="OJN-Mg-Eya" firstAttribute="top" secondItem="LwC-SX-YJk" secondAttribute="bottom" constant="421" id="OmX-rU-UYL"/>
                             <constraint firstItem="amg-lh-q2g" firstAttribute="leading" secondItem="s2f-lc-TdE" secondAttribute="trailing" constant="13" id="Tbc-21-fdx"/>
                             <constraint firstItem="s2f-lc-TdE" firstAttribute="top" secondItem="LwC-SX-YJk" secondAttribute="bottom" constant="19" id="aWt-YB-FHO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LwC-SX-YJk" secondAttribute="trailing" constant="188" id="aix-S9-MP3"/>
                             <constraint firstItem="amg-lh-q2g" firstAttribute="top" secondItem="LwC-SX-YJk" secondAttribute="bottom" constant="19" id="dmy-tQ-vMb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LwC-SX-YJk" secondAttribute="trailing" constant="188" id="fIZ-ip-Asu"/>
                             <constraint firstItem="s2f-lc-TdE" firstAttribute="top" secondItem="amg-lh-q2g" secondAttribute="top" id="mf6-Z4-NIb"/>
                             <constraint firstItem="s2f-lc-TdE" firstAttribute="centerX" secondItem="LwC-SX-YJk" secondAttribute="centerX" id="oZW-cg-hVM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="amg-lh-q2g" secondAttribute="trailing" constant="166" id="yJ7-Hh-9VO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="amg-lh-q2g" secondAttribute="trailing" constant="150" id="yJ7-Hh-9VO"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
