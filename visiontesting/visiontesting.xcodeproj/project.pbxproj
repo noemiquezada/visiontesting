@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */; };
+		2A5AB5BD1C704E9500E35945 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BC1C704E9500E35945 /* SafariServices.framework */; };
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = ../../../../Downloads/LoginWithAmazon/LoginWithAmazon.framework; sourceTree = "<group>"; };
+		2A5AB5BC1C704E9500E35945 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		44353D341C6FD7CE00F4C20B /* visiontesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visiontesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353D381C6FD7CE00F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44353D751C6FE04000F4C20B /* CoreGraphics.framework in Frameworks */,
+				2A5AB5BD1C704E9500E35945 /* SafariServices.framework in Frameworks */,
+				44353D7B1C6FE05400F4C20B /* Security.framework in Frameworks */,
 				2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */,
 				44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */,
 				44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */,
@@ -110,10 +115,8 @@
 				44353D811C6FE06F00F4C20B /* libz.tbd in Frameworks */,
 				44353D7F1C6FE06200F4C20B /* SystemConfiguration.framework in Frameworks */,
 				44353D7D1C6FE05A00F4C20B /* StoreKit.framework in Frameworks */,
-				44353D7B1C6FE05400F4C20B /* Security.framework in Frameworks */,
 				44353D791C6FE04D00F4C20B /* QuartzCore.framework in Frameworks */,
 				44353D771C6FE04700F4C20B /* CoreLocation.framework in Frameworks */,
-				44353D751C6FE04000F4C20B /* CoreGraphics.framework in Frameworks */,
 				44353D731C6FE02C00F4C20B /* CFNetwork.framework in Frameworks */,
 				44353D711C6FE02400F4C20B /* AudioToolbox.framework in Frameworks */,
 				44353D6F1C6FDFA400F4C20B /* Parse.framework in Frameworks */,
@@ -212,6 +215,7 @@
 		44353D6B1C6FDF7E00F4C20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A5AB5BC1C704E9500E35945 /* SafariServices.framework */,
 				2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */,
 				44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */,
 				44353DD11C6FEC7D00F4C20B /* Foundation.framework */,
