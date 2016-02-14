@@ -46,5 +46,29 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-nquezada.visiontesting</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>nquezada.visiontesting</string>
+		</dict>
+	</array>
+	<key>APIKey</key>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LjRlY2IzMGQ3MjQ0NjQ0NWFiYzM0M2MxZTg5YjhkYjY0IiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi5iZDU0MDI1MGEwYjI0MTIxOThhNjlkZmYwYzRmMzk2YyIsImJ1bmRsZVNlZWRJZCI6Im5xdWV6YWRhLnZpc2lvbnRlc3RpbmciLCJidW5kbGVJZCI6Im5xdWV6YWRhLnZpc2lvbnRlc3RpbmciLCJpc3MiOiJBbWF6b24iLCJ0eXBlIjoiQVBJS2V5IiwiYXBwVmFyaWFudElkIjoiYW16bjEuYXBwbGljYXRpb24tY2xpZW50LjNhZTg2ZmEyNzBhNDQ0OTFhNjVhNjY2OWMyNmE3MGY4IiwidHJ1c3RQb29sIjpudWxsLCJhcHBJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC4zYWU4NmZhMjcwYTQ0NDkxYTY1YTY2NjljMjZhNzBmOCIsImlkIjoiYTkyYjY3MGYtZDJkYy0xMWU1LWJlMzQtM2QzMmJjMWIzOTE0IiwiaWF0IjoiMTQ1NTQyODA4Nzc3OSJ9.S9iqdP7yVUBw3QWj6BN9g2owYr3iyNhoNO/P1+imdlKUm2kxpXd6O2b1V9E+7D/Ww0S0kuYu0bA1Y33V7HB36VvuKEvuLZxw35UQuh/JxylcuVSdxatvGrIbozDmRI6HWgPvbzgz+QUrizIPxQuW+8FL6h6bHDh6WCjsMT1EovGrBUi4El6xcgOxPY/9ur0FVeV0LBx1sEs8Zfzjwj94tkSwSZmUGWh76n241nG1FtFRTDdJft1BjGC+MVBROBX1i1V1p3DiLzko/yN0lXBIqSnIJ7jFnXBmod9hJXpK18m6drM5h2NR9xnRvwbBtgEEFF88TT85BhoTrU5TA7xaLQ==</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>api.amazon.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>

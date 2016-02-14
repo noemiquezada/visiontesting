@@ -42,11 +42,6 @@
                              [UIImage imageNamed:@"pulse-2.png"],
                              [UIImage imageNamed:@"pulse-3.png"],
                              nil];
-//    NSArray * imageArray  = [[NSArray alloc] initWithObjects:
-//                             [UIImage imageNamed:@".png"],
-//                             nil];
-//    self.pulser = [[UIImageView alloc] initWithFrame:
-//                   CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
     pulser.animationImages = imageArray;
     pulser.animationDuration = 1.0;
 //    pulser.contentMode = UIViewContentModeCenter;
@@ -63,8 +58,12 @@
         [self.appDelegate.sessionController sendInvitationToPeer:[[notification userInfo] objectForKey:@"peerID"]];
         testButton.titleLabel.text = @"Ipad";
         
+//        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
+        [pulser stopAnimating];
+        [self showConfirmationAlert];
     } else {
         testButton.titleLabel.text = @"Test";
+        [pulser stopAnimating];
     }
     
 }
@@ -98,6 +97,26 @@
 
 - (IBAction)continueTestAction:(id)sender {
   //  [self performSegueWithIdentifier:@"continueGame" sender:self];
+    if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
+        [self.appDelegate.sessionController sendInvitationToPeer:[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0]];
+    }
+    [pulser startAnimating];
+}
+-(void)showConfirmationAlert{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
+                                                    message:@""
+                                                   delegate:self
+                                          cancelButtonTitle:@"Continue"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    // the user clicked continue
+    if (buttonIndex == 0) {
+        //take them to start speaking with Alexa
+        [self performSegueWithIdentifier:@"pairedSegue" sender:self];
+        [self.appDelegate.sessionController stopBrowsing];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

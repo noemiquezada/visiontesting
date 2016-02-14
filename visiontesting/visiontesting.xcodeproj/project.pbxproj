@@ -13,7 +13,6 @@
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
-		44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D401C6FD7CE00F4C20B /* Main.storyboard */; };
 		44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44353D431C6FD7CE00F4C20B /* Assets.xcassets */; };
 		44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */; };
 		44353D521C6FD7CE00F4C20B /* visiontestingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D511C6FD7CE00F4C20B /* visiontestingTests.m */; };
@@ -40,6 +39,15 @@
 		44A052621C702B010041BEAB /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A052611C702B010041BEAB /* LocationController.m */; };
 		44A3B8A81C7064AA002299E5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A71C7064AA002299E5 /* MapKit.framework */; };
 		44A3B8AA1C7070D9002299E5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */; };
+		44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8AE1C70A684002299E5 /* Main.storyboard */; };
+		65A2B5711C70716200347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56C1C70716200347275 /* inner.png */; };
+		65A2B5721C70716200347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56D1C70716200347275 /* pulse-1.png */; };
+		65A2B5731C70716200347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56E1C70716200347275 /* pulse-2.png */; };
+		65A2B5741C70716200347275 /* pulse-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56F1C70716200347275 /* pulse-3.png */; };
+		65A2B5751C70716200347275 /* pulse-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5701C70716200347275 /* pulse-4.png */; };
+		65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5781C7078B700347275 /* DistanceViewController.m */; };
+		65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57B1C70799200347275 /* AlphabetViewController.m */; };
+		65A2B57F1C707C1700347275 /* EyeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B57E1C707C1700347275 /* EyeObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +78,6 @@
 		44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstructionsViewController.h; sourceTree = "<group>"; };
 		44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstructionsViewController.m; sourceTree = "<group>"; };
-		44353D411C6FD7CE00F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44353D431C6FD7CE00F4C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44353D461C6FD7CE00F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44353D481C6FD7CE00F4C20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +114,18 @@
 		44A052611C702B010041BEAB /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 		44A3B8A71C7064AA002299E5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		44A3B8AE1C70A684002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		65A2B56C1C70716200347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
+		65A2B56D1C70716200347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
+		65A2B56E1C70716200347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
+		65A2B56F1C70716200347275 /* pulse-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-3.png"; sourceTree = "<group>"; };
+		65A2B5701C70716200347275 /* pulse-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-4.png"; sourceTree = "<group>"; };
+		65A2B5771C7078B700347275 /* DistanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceViewController.h; sourceTree = "<group>"; };
+		65A2B5781C7078B700347275 /* DistanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceViewController.m; sourceTree = "<group>"; };
+		65A2B57A1C70799200347275 /* AlphabetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphabetViewController.h; sourceTree = "<group>"; };
+		65A2B57B1C70799200347275 /* AlphabetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetViewController.m; sourceTree = "<group>"; };
+		65A2B57D1C707C1700347275 /* EyeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EyeObject.h; sourceTree = "<group>"; };
+		65A2B57E1C707C1700347275 /* EyeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyeObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,13 +197,18 @@
 		44353D361C6FD7CE00F4C20B /* visiontesting */ = {
 			isa = PBXGroup;
 			children = (
+				65A2B5801C707C1C00347275 /* Objects */,
 				44353DE01C6FF40E00F4C20B /* SessionController.h */,
+				44A3B8AE1C70A684002299E5 /* Main.storyboard */,
 				44353DE11C6FF40E00F4C20B /* SessionController.m */,
 				44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */,
 				44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */,
 				44353D3D1C6FD7CE00F4C20B /* InstructionsViewController.h */,
 				44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */,
-				44353D401C6FD7CE00F4C20B /* Main.storyboard */,
+				65A2B57A1C70799200347275 /* AlphabetViewController.h */,
+				65A2B57B1C70799200347275 /* AlphabetViewController.m */,
+				65A2B5771C7078B700347275 /* DistanceViewController.h */,
+				65A2B5781C7078B700347275 /* DistanceViewController.m */,
 				44353D431C6FD7CE00F4C20B /* Assets.xcassets */,
 				44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */,
 				44353D481C6FD7CE00F4C20B /* Info.plist */,
@@ -197,6 +221,7 @@
 				44A052611C702B010041BEAB /* LocationController.m */,
 				2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */,
 				2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */,
+				65A2B5761C7071A600347275 /* Photos */,
 			);
 			path = visiontesting;
 			sourceTree = "<group>";
@@ -252,6 +277,27 @@
 				44353D6D1C6FDFA400F4C20B /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65A2B5761C7071A600347275 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B56C1C70716200347275 /* inner.png */,
+				65A2B56D1C70716200347275 /* pulse-1.png */,
+				65A2B56E1C70716200347275 /* pulse-2.png */,
+				65A2B56F1C70716200347275 /* pulse-3.png */,
+				65A2B5701C70716200347275 /* pulse-4.png */,
+			);
+			name = Photos;
+			sourceTree = "<group>";
+		};
+		65A2B5801C707C1C00347275 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				65A2B57D1C707C1700347275 /* EyeObject.h */,
+				65A2B57E1C707C1700347275 /* EyeObject.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,10 +404,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B5751C70716200347275 /* pulse-4.png in Resources */,
+				44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */,
 				44353D851C6FE45400F4C20B /* Parse in Resources */,
 				44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */,
-				44353D421C6FD7CE00F4C20B /* Main.storyboard in Resources */,
+				65A2B5731C70716200347275 /* pulse-2.png in Resources */,
+				65A2B5721C70716200347275 /* pulse-1.png in Resources */,
+				65A2B5711C70716200347275 /* inner.png in Resources */,
+				65A2B5741C70716200347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B57C1C70799200347275 /* AlphabetViewController.m in Sources */,
 				44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */,
 				44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */,
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
@@ -393,6 +445,8 @@
 				44A052621C702B010041BEAB /* LocationController.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
+				65A2B57F1C707C1700347275 /* EyeObject.m in Sources */,
+				65A2B5791C7078B700347275 /* DistanceViewController.m in Sources */,
 				2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,14 +483,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44353D401C6FD7CE00F4C20B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353D411C6FD7CE00F4C20B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44353D451C6FD7CE00F4C20B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

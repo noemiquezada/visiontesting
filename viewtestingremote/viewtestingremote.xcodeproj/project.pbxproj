@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AAB82A71C7056580000B6F9 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB82A61C7056580000B6F9 /* LoginWithAmazon.framework */; };
+		2AAB82A91C70565D0000B6F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB82A81C70565D0000B6F9 /* Security.framework */; };
+		2AAB82AB1C7056610000B6F9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB82AA1C7056610000B6F9 /* SafariServices.framework */; };
+		2AAB82AD1C7056710000B6F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAB82AC1C7056710000B6F9 /* CoreGraphics.framework */; };
+		2AAB82B01C7058500000B6F9 /* AlexaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB82AF1C7058500000B6F9 /* AlexaViewController.m */; };
 		44353D971C6FEB2500F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D961C6FEB2500F4C20B /* main.m */; };
 		44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D991C6FEB2500F4C20B /* AppDelegate.m */; };
-		44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353D9E1C6FEB2500F4C20B /* Main.storyboard */; };
 		44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA11C6FEB2500F4C20B /* Assets.xcassets */; };
-		44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */; };
 		44353DB01C6FEB2500F4C20B /* viewtestingremoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DAF1C6FEB2500F4C20B /* viewtestingremoteTests.m */; };
 		44353DBB1C6FEB2500F4C20B /* viewtestingremoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DBA1C6FEB2500F4C20B /* viewtestingremoteUITests.m */; };
 		44353DCA1C6FEC3100F4C20B /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */; };
@@ -20,12 +23,16 @@
 		44353DE51C6FF45400F4C20B /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DE41C6FF45400F4C20B /* SessionController.m */; };
 		44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353DEA1C70014E00F4C20B /* FindTestViewController.m */; };
 		44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A3B8AC1C7088A2002299E5 /* LocationController.m */; };
+		44A3B8B31C70A8C5002299E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */; };
+		44A3B8B51C70A925002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8B41C70A925002299E5 /* Main.storyboard */; };
 		65A2B55E1C701AE800347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5591C701AE800347275 /* inner.png */; };
 		65A2B55F1C701AE800347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55A1C701AE800347275 /* pulse-1.png */; };
 		65A2B5601C701AE800347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55B1C701AE800347275 /* pulse-2.png */; };
 		65A2B5611C701AE800347275 /* pulse-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55C1C701AE800347275 /* pulse-3.png */; };
 		65A2B5621C701AE800347275 /* pulse-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B55D1C701AE800347275 /* pulse-4.png */; };
 		65A2B5661C702A0500347275 /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A2B5651C702A0500347275 /* VoiceViewController.m */; };
+		65A2B56A1C70663000347275 /* speakButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5681C70663000347275 /* speakButton.png */; };
+		65A2B56B1C70663000347275 /* speakButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B5691C70663000347275 /* speakButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +53,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AAB82A61C7056580000B6F9 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LoginWithAmazon.framework; sourceTree = "<group>"; };
+		2AAB82A81C70565D0000B6F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2AAB82AA1C7056610000B6F9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		2AAB82AC1C7056710000B6F9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2AAB82AE1C7058500000B6F9 /* AlexaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexaViewController.h; sourceTree = "<group>"; };
+		2AAB82AF1C7058500000B6F9 /* AlexaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexaViewController.m; sourceTree = "<group>"; };
 		44353D921C6FEB2500F4C20B /* viewtestingremote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewtestingremote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353D961C6FEB2500F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D981C6FEB2500F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44353D991C6FEB2500F4C20B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		44353D9F1C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44353DA11C6FEB2500F4C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		44353DA41C6FEB2500F4C20B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44353DA61C6FEB2500F4C20B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44353DAB1C6FEB2500F4C20B /* viewtestingremoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewtestingremoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353DAF1C6FEB2500F4C20B /* viewtestingremoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewtestingremoteTests.m; sourceTree = "<group>"; };
@@ -70,6 +81,8 @@
 		44353DEA1C70014E00F4C20B /* FindTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindTestViewController.m; sourceTree = "<group>"; };
 		44A3B8AB1C7088A2002299E5 /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
 		44A3B8AC1C7088A2002299E5 /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44A3B8B41C70A925002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		65A2B5591C701AE800347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
 		65A2B55A1C701AE800347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
 		65A2B55B1C701AE800347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
@@ -77,6 +90,8 @@
 		65A2B55D1C701AE800347275 /* pulse-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-4.png"; sourceTree = "<group>"; };
 		65A2B5641C702A0500347275 /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceViewController.h; sourceTree = "<group>"; };
 		65A2B5651C702A0500347275 /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceViewController.m; sourceTree = "<group>"; };
+		65A2B5681C70663000347275 /* speakButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speakButton.png; sourceTree = "<group>"; };
+		65A2B5691C70663000347275 /* speakButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speakButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +99,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAB82AD1C7056710000B6F9 /* CoreGraphics.framework in Frameworks */,
+				2AAB82AB1C7056610000B6F9 /* SafariServices.framework in Frameworks */,
+				2AAB82A91C70565D0000B6F9 /* Security.framework in Frameworks */,
+				2AAB82A71C7056580000B6F9 /* LoginWithAmazon.framework in Frameworks */,
 				44353DCE1C6FEC4B00F4C20B /* Foundation.framework in Frameworks */,
 				44353DCC1C6FEC4300F4C20B /* UIKit.framework in Frameworks */,
 				44353DCA1C6FEC3100F4C20B /* MultipeerConnectivity.framework in Frameworks */,
@@ -110,6 +129,10 @@
 		44353D891C6FEB2500F4C20B = {
 			isa = PBXGroup;
 			children = (
+				2AAB82AC1C7056710000B6F9 /* CoreGraphics.framework */,
+				2AAB82AA1C7056610000B6F9 /* SafariServices.framework */,
+				2AAB82A81C70565D0000B6F9 /* Security.framework */,
+				2AAB82A61C7056580000B6F9 /* LoginWithAmazon.framework */,
 				44353DCD1C6FEC4B00F4C20B /* Foundation.framework */,
 				44353DCB1C6FEC4300F4C20B /* UIKit.framework */,
 				44353DC91C6FEC3100F4C20B /* MultipeerConnectivity.framework */,
@@ -137,16 +160,18 @@
 				44353DE41C6FF45400F4C20B /* SessionController.m */,
 				44353D981C6FEB2500F4C20B /* AppDelegate.h */,
 				44353D991C6FEB2500F4C20B /* AppDelegate.m */,
-				44353D9E1C6FEB2500F4C20B /* Main.storyboard */,
+				44A3B8B41C70A925002299E5 /* Main.storyboard */,
+				44A3B8B21C70A8C5002299E5 /* LaunchScreen.storyboard */,
 				65A2B5641C702A0500347275 /* VoiceViewController.h */,
 				65A2B5651C702A0500347275 /* VoiceViewController.m */,
 				44353DA11C6FEB2500F4C20B /* Assets.xcassets */,
-				44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */,
 				44353DA61C6FEB2500F4C20B /* Info.plist */,
 				65A2B5671C7033FF00347275 /* Photos */,
 				44353D951C6FEB2500F4C20B /* Supporting Files */,
 				44353DE91C70014E00F4C20B /* FindTestViewController.h */,
 				44353DEA1C70014E00F4C20B /* FindTestViewController.m */,
+				2AAB82AE1C7058500000B6F9 /* AlexaViewController.h */,
+				2AAB82AF1C7058500000B6F9 /* AlexaViewController.m */,
 			);
 			path = viewtestingremote;
 			sourceTree = "<group>";
@@ -183,6 +208,8 @@
 		65A2B5671C7033FF00347275 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				65A2B5681C70663000347275 /* speakButton.png */,
+				65A2B5691C70663000347275 /* speakButton@2x.png */,
 				65A2B5591C701AE800347275 /* inner.png */,
 				65A2B55A1C701AE800347275 /* pulse-1.png */,
 				65A2B55B1C701AE800347275 /* pulse-2.png */,
@@ -295,13 +322,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A2B56A1C70663000347275 /* speakButton.png in Resources */,
 				65A2B5621C701AE800347275 /* pulse-4.png in Resources */,
 				65A2B5601C701AE800347275 /* pulse-2.png in Resources */,
 				65A2B55E1C701AE800347275 /* inner.png in Resources */,
-				44353DA51C6FEB2500F4C20B /* LaunchScreen.storyboard in Resources */,
+				65A2B56B1C70663000347275 /* speakButton@2x.png in Resources */,
 				44353DA21C6FEB2500F4C20B /* Assets.xcassets in Resources */,
-				44353DA01C6FEB2500F4C20B /* Main.storyboard in Resources */,
+				44A3B8B51C70A925002299E5 /* Main.storyboard in Resources */,
 				65A2B55F1C701AE800347275 /* pulse-1.png in Resources */,
+				44A3B8B31C70A8C5002299E5 /* LaunchScreen.storyboard in Resources */,
 				65A2B5611C701AE800347275 /* pulse-3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAB82B01C7058500000B6F9 /* AlexaViewController.m in Sources */,
 				44353DEB1C70014E00F4C20B /* FindTestViewController.m in Sources */,
 				44353D9A1C6FEB2500F4C20B /* AppDelegate.m in Sources */,
 				44A3B8AD1C7088A2002299E5 /* LocationController.m in Sources */,
@@ -366,25 +396,6 @@
 			targetProxy = 44353DB71C6FEB2500F4C20B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		44353D9E1C6FEB2500F4C20B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353D9F1C6FEB2500F4C20B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		44353DA31C6FEB2500F4C20B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44353DA41C6FEB2500F4C20B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		44353DBD1C6FEB2500F4C20B /* Debug */ = {
@@ -473,6 +484,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = viewtestingremote/PrefixHeader.pch;
 				INFOPLIST_FILE = viewtestingremote/Info.plist;
@@ -488,6 +503,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = viewtestingremote/PrefixHeader.pch;
 				INFOPLIST_FILE = viewtestingremote/Info.plist;
