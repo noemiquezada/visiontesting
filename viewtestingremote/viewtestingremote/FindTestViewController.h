@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface FindTestViewController : UIViewController
+@interface FindTestViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
 @property (weak, nonatomic) IBOutlet UIButton *testButton;
@@ -18,5 +18,7 @@
 - (IBAction)exitTestAction:(id)sender;
 - (IBAction)joinTestAction:(id)sender;
 - (IBAction)continueTestAction:(id)sender;
+- (void)showConfirmationAlert;
+
 
 @end

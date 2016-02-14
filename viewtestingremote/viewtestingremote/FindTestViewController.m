@@ -91,10 +91,25 @@
     [self.pulser startAnimating];
 }
 
-
 - (IBAction)continueTestAction:(id)sender {
-    [self performSegueWithIdentifier:@"continueGame" sender:self];
+    //    [self performSegueWithIdentifier:@"continueGame" sender:self];
+    [self showConfirmationAlert];
 }
+-(void)showConfirmationAlert{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
+                                                    message:@""
+                                                   delegate:self
+                                          cancelButtonTitle:@"Continue"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    // the user clicked continue
+    if (buttonIndex == 0) {
+        NSLog(@"they clicked okay");
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
