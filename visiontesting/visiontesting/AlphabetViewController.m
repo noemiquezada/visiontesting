@@ -62,48 +62,62 @@
     usersAnswerField.text=@"";
     NSLog(@"vision score: %d", visionScore);
     if(testFinished==true){
-        letterLabel.text=[NSString stringWithFormat:@"Thank You, your score is %@", [self getEyeLevel:myVisionExam.level]];
+        letterLabel.text=[NSString stringWithFormat:@"Score is %@", [self getEyeLevel:myVisionExam.level]];
     }
     if (myVisionExam.level==5 && counter==5){
             if (visionScore > 4){
-                level--;
+                level++;
                 myVisionExam.level=level;
                 NSLog(@"user passed");
                 //The user passed the level and will continue to go down.
             }
             else{
-                level++;
+                level--;
                 NSLog(@"user failed");
                 myVisionExam.level=level;
                 //the user failed the level
             }
             counter=0;
+            visionScore = 0;
     }
     if (myVisionExam.level<5 && counter==5){
        if (visionScore > 4){
-            level++;
-            myVisionExam.level=level;
+            //level++;
+           testFinished = true;
+            //myVisionExam.level=level;
             NSLog(@"user passed");
             //The user passed the level and will continue to go down.
         }
-        else{
-            myVisionExam.level=level;
-            testFinished=true;
-        }
-        counter=0;
-    }
-    if (myVisionExam.level>5 && counter==5){
-        if (visionScore < 4){
-            myVisionExam.level=level;
-            testFinished=true;
+        else if (myVisionExam.level <=1)
+        {
+            myVisionExam.level = level;
+            testFinished = true;
         }
         else{
             level--;
             myVisionExam.level=level;
-            NSLog(@"user failed");
+        }
+        counter=0;
+        visionScore = 0;
+    }
+    if (myVisionExam.level>5 && myVisionExam.level <= 8  && counter==5){
+        if (visionScore < 4){
+            myVisionExam.level=level;
+            testFinished=true;
+        }
+        else if(myVisionExam.level >= 8)
+        {
+            myVisionExam.level=level;
+            testFinished=true;
+        }
+        else{
+            level++;
+            myVisionExam.level=level;
+            NSLog(@"user passed");
             //The user failed the level and will have to go up the chart.
         }
         counter=0;
+        visionScore = 0;
     }
 }
 
