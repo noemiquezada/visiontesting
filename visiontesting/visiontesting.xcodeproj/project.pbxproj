@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */; };
 		2A5AB5BD1C704E9500E35945 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BC1C704E9500E35945 /* SafariServices.framework */; };
+		2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */; settings = {ASSET_TAGS = (); }; };
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
@@ -58,6 +59,8 @@
 /* Begin PBXFileReference section */
 		2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = ../../../../Downloads/LoginWithAmazon/LoginWithAmazon.framework; sourceTree = "<group>"; };
 		2A5AB5BC1C704E9500E35945 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexaViewController.h; sourceTree = "<group>"; };
+		2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexaViewController.m; sourceTree = "<group>"; };
 		44353D341C6FD7CE00F4C20B /* visiontesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visiontesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353D381C6FD7CE00F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				44353D871C6FEA9500F4C20B /* PairingViewController.m */,
 				44353DE61C6FFAE000F4C20B /* FindRemoteViewController.h */,
 				44353DE71C6FFAE000F4C20B /* FindRemoteViewController.m */,
+				2A5AB5BE1C70523C00E35945 /* AlexaViewController.h */,
+				2A5AB5BF1C70523C00E35945 /* AlexaViewController.m */,
 			);
 			path = visiontesting;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				44353D391C6FD7CE00F4C20B /* main.m in Sources */,
 				44353DE81C6FFAE000F4C20B /* FindRemoteViewController.m in Sources */,
 				44353DE21C6FF40E00F4C20B /* SessionController.m in Sources */,
+				2A5AB5C01C70523C00E35945 /* AlexaViewController.m in Sources */,
 				44353D881C6FEA9500F4C20B /* PairingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
