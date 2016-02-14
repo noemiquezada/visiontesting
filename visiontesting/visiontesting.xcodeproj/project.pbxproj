@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */; };
 		44353D391C6FD7CE00F4C20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D381C6FD7CE00F4C20B /* main.m */; };
 		44353D3C1C6FD7CE00F4C20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3B1C6FD7CE00F4C20B /* AppDelegate.m */; };
 		44353D3F1C6FD7CE00F4C20B /* InstructionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44353D3E1C6FD7CE00F4C20B /* InstructionsViewController.m */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoginWithAmazon.framework; path = ../../../../Downloads/LoginWithAmazon/LoginWithAmazon.framework; sourceTree = "<group>"; };
 		44353D341C6FD7CE00F4C20B /* visiontesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = visiontesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44353D381C6FD7CE00F4C20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44353D3A1C6FD7CE00F4C20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5AB5BB1C70487200E35945 /* LoginWithAmazon.framework in Frameworks */,
 				44353DD41C6FEC8A00F4C20B /* MultipeerConnectivity.framework in Frameworks */,
 				44353DD21C6FEC7D00F4C20B /* Foundation.framework in Frameworks */,
 				44353DD01C6FEC7200F4C20B /* UIKit.framework in Frameworks */,
@@ -209,6 +212,7 @@
 		44353D6B1C6FDF7E00F4C20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A5AB5BA1C70487200E35945 /* LoginWithAmazon.framework */,
 				44353DD31C6FEC8A00F4C20B /* MultipeerConnectivity.framework */,
 				44353DD11C6FEC7D00F4C20B /* Foundation.framework */,
 				44353DCF1C6FEC7100F4C20B /* UIKit.framework */,
@@ -613,6 +617,7 @@
 				44353D631C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353D641C6FD7CF00F4C20B /* Build configuration list for PBXNativeTarget "visiontestingTests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +626,7 @@
 				44353D661C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44353D671C6FD7CF00F4C20B /* Build configuration list for PBXNativeTarget "visiontestingUITests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +635,7 @@
 				44353D691C6FD7CF00F4C20B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
