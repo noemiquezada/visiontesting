@@ -18,6 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Actively searching for tests..." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-vo-8f5">
+                                <rect key="frame" x="37" y="77" width="527" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfL-pa-gMv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <constraints>
@@ -35,6 +41,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Make sure Wi-Fi and Bluetooth are enabled on both devices. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lG-ID-MU9">
+                                <rect key="frame" x="76" y="125" width="448" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-Wl-fZV">
                                 <rect key="frame" x="0.0" y="532" width="600" height="68"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,25 +68,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7U-u5-nAK">
-                                <rect key="frame" x="184" y="285" width="233" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <rect key="frame" x="284" y="285" width="33" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="cDa-bb-9hK"/>
+                                    <constraint firstAttribute="height" constant="30" id="hPB-TE-c4w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Test"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cDa-bb-9hK"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="joinTestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qrq-Uz-Hg5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Actively searching for tests..." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7X-vo-8f5">
-                                <rect key="frame" x="37" y="77" width="527" height="40"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Make sure Wi-Fi and Bluetooth are enabled on both devices. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lG-ID-MU9">
-                                <rect key="frame" x="76" y="125" width="448" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -103,7 +112,19 @@
                             <constraint firstAttribute="trailingMargin" secondItem="E7U-u5-nAK" secondAttribute="trailing" constant="163" id="oYx-cF-h9j"/>
                             <constraint firstItem="0lG-ID-MU9" firstAttribute="top" secondItem="l7X-vo-8f5" secondAttribute="bottom" constant="8" id="pvA-C6-F6e"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LSW-Pz-F2g"/>
+                                <exclude reference="oYx-cF-h9j"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="continueTestButton" destination="4LE-Wl-fZV" id="B5I-fk-5xk"/>
+                        <outlet property="testButton" destination="E7U-u5-nAK" id="Pxi-EC-Sqd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
