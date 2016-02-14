@@ -12,5 +12,6 @@
 @interface DistanceAnalyzerViewController : UIViewController
 
 @property (strong, nonatomic) AppDelegate *appDelegate;
+@property (strong, nonatomic) CLLocation* remoteLocation; 
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "FindRemoteViewController.h"
+#import "LocationController.h"
 
 @interface FindRemoteViewController ()
 
@@ -27,6 +28,7 @@
                                              selector:@selector(peerChangedStateWithNotification:)
                                                  name:@"didChangeStateNotification"
                                                object:nil];
+
 }
 
 - (void)peerChangedStateWithNotification:(NSNotification *)notification {

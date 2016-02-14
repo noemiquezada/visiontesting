@@ -6,6 +6,7 @@
 //  Copyright © 2016 App Development. All rights reserved.
 //
 
+
 @interface SessionController : NSObject <MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate>
 
 @property (nonatomic, strong) MCPeerID *peerID;
@@ -32,4 +33,3 @@
 - (void)setupAdvertising;
 
 @end
-

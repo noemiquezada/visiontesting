@@ -18,4 +18,5 @@
 +(LocationController *)sharedLocationController;
 - (void)startLocationServices;
 -(CLLocationDistance) calculateDistanceWithMyLocation: (CLLocation *)myLocation remoteLocation:(CLLocation *) aRemoteLocation;
+
 @end

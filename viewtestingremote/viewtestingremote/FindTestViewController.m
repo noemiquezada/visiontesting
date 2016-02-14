@@ -35,6 +35,7 @@
                                              selector:@selector(didFoundPeerNotification:)
                                                  name:@"foundPeerNotification"
                                                object:nil];
+
     //Animation loading for the pulsing radar
     NSArray * imageArray  = [[NSArray alloc] initWithObjects:
                              [UIImage imageNamed:@"pulse-1.png"],
@@ -51,13 +52,17 @@
 //    pulser.contentMode = UIViewContentModeCenter;
 //    pulser.contentMode = UIViewContentModeScaleAspectFit;
 //    [self.view addSubview:pulser];
+       [self.pulser startAnimating];
 
 }
 
 - (void)didFoundPeerNotification:(NSNotification *) notification {
+    NSLog(@"notification: %@", notification);
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
         testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
-        [self continueTestAction:self];
+        [self.appDelegate.sessionController sendInvitationToPeer:[[notification userInfo] objectForKey:@"peerID"]];
+        testButton.titleLabel.text = @"Ipad";
+        
     } else {
         testButton.titleLabel.text = @"Test";
     }
@@ -76,7 +81,7 @@
             allTests = [allTests stringByAppendingString:displayName];
         }
         NSLog(@"%@", allTests);
-    }
+    } 
 }
 
 - (IBAction)exitTestAction:(id)sender {
@@ -86,15 +91,13 @@
 }
 
 - (IBAction)joinTestAction:(id)sender {
-    if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
-        [self.appDelegate.sessionController sendInvitationToPeer:[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0]];
-    }
-    [self.pulser startAnimating];
+
+ 
 }
 
 
 - (IBAction)continueTestAction:(id)sender {
-    [self performSegueWithIdentifier:@"continueGame" sender:self];
+  //  [self performSegueWithIdentifier:@"continueGame" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {

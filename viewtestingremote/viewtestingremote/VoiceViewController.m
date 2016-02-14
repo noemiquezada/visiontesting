@@ -18,6 +18,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleReceivedDataWithNotification:)
+                                                 name:@"didReceiveDataNotification"
+                                               object:nil];
+}
+
+- (void)handleReceivedDataWithNotification:(NSNotification *)notification {
+    // Get the user info dictionary that was received along with the notification.
+    NSLog(@"Received a notification");
+    NSDictionary *userInfoDict = [notification userInfo];
+    
+    // Convert the received data into a NSString object.
+    NSData *receivedData = [userInfoDict objectForKey:@"data"];
+    NSString *message = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    MCPeerID *senderPeerId = [userInfoDict objectForKey:@"peerID"];
+    if ([message isEqualToString:@"location"])
+    {
+        //Get current location
+        CLLocation * remoteLocation = [self.appDelegate.locationController currentLocation];
+        NSString * locationDataString = [NSString stringWithFormat:@"%f,%f", remoteLocation.coordinate.latitude, remoteLocation.coordinate.longitude];
+        //Send Location
+        NSData * locationData = [locationDataString dataUsingEncoding:NSUTF8StringEncoding];
+        NSError *error;
+        [self.appDelegate.sessionController.session sendData:locationData toPeers:[NSArray arrayWithObject:senderPeerId] withMode:MCSessionSendDataReliable error:&error];
+        
+        //If any error occurs just log its description.
+        if (error != nil)
+        {
+            NSLog(@"%@", [error localizedDescription]);
+        }
+        NSLog(@"I sent a location");
+    }
 }
 
 - (void)didReceiveMemoryWarning {

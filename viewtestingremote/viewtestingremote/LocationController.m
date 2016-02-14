@@ -38,6 +38,7 @@ static LocationController *_sharedLocationController;
     return [super allocWithZone:zone];
 }
 
+
 - (void)startLocationServices {
     NSLog(@"Starting Location Services"); 
     locationManager = [[CLLocationManager alloc] init];
@@ -59,6 +60,7 @@ static LocationController *_sharedLocationController;
     self.currentLocation = loc;
     
 }
+
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     [locationManager stopUpdatingLocation];
