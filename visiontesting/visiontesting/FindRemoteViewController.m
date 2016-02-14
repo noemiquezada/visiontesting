@@ -58,6 +58,7 @@
         NSLog(@"%@", allPlayers);
         [self.appDelegate.sessionController stopAdvertising];
         [self performSegueWithIdentifier:@"continueToDistanceAnalyzer" sender:self];
+            [self.appDelegate.sessionController.serviceAdvertiser stopAdvertisingPeer];
     }
 }
 
@@ -68,6 +69,7 @@
 
 - (IBAction)exitTestAction:(id)sender {
     [self.appDelegate.sessionController.serviceAdvertiser stopAdvertisingPeer];
+    //[self.appDelegate.sessionController stopAdvertising];
     //[self.appDelegate.sessionController advertiseSelf:NO];
     [self.appDelegate.sessionController destroySession];
     [self dismissViewControllerAnimated:YES completion:nil];

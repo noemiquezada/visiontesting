@@ -26,7 +26,38 @@
                                                object:nil];
 }
 
+-(void)sendAnswerWithResponse: (NSString *) response
+{
+    //Send Message to send Ipad
+    NSString *messageToSend = [NSString stringWithFormat:@"%@", response];
+    NSData *messageAsData = [messageToSend dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *error;
+    
+    [self.appDelegate.sessionController.session sendData:messageAsData
+                                                 toPeers:self.appDelegate.sessionController.session.connectedPeers
+                                                withMode:MCSessionSendDataReliable
+                                                   error:&error];
+    
+    // If any error occurs, just log it.
+    // Otherwise set the following couple of flags to YES, indicating that the current player is the creator
+    // of the game and a game is in progress.
+    if (error != nil) {
+        NSLog(@"error");
+        NSLog(@"%@", [error localizedDescription]);
+        
+    } else{
+        
+    }
+}
+
 -(void)viewWillAppear:(BOOL)animated {
+    
+    _recognitionType = SKTransactionSpeechTypeDictation;
+    _endpointer = SKTransactionEndOfSpeechDetectionShort;
+    _language = @"eng-USA";
+    
+    _state = SKSIdle;
+
     _skTransaction = nil;
     self.languageCode = @"eng-USA";
     
@@ -53,6 +84,8 @@
         [self resetTransaction];
     }
     [self performSelector:@selector(viewDidLoad) withObject:nil afterDelay:3.0];
+    
+    //[self loadEarcons];
 }
 
 -(void) createTransaction: (NSString *)s {
@@ -77,6 +110,32 @@
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         _skTransaction = nil;
     }];
+}
+
+- (void)recognize
+{
+    // Start listening to the user.
+    //[_toggleRecogButton setTitle:@"Stop" forState:UIControlStateNormal];
+    
+    _skTransaction = [_skSession recognizeWithType:self.recognitionType
+                                         detection:self.endpointer
+                                          language:self.language
+                                          delegate:self];
+}
+
+- (void)stopRecording
+{
+    // Stop recording the user.
+    [_skTransaction stopRecording];
+    // Disable the button until we received notification that the transaction is completed.
+
+}
+
+- (void)cancel
+{
+    // Cancel the Reco transaction.
+    // This will only cancel if we have not received a response from the server yet.
+    [_skTransaction cancel];
 }
 
 - (void)handleReceivedDataWithNotification:(NSNotification *)notification {
@@ -113,6 +172,7 @@
 }
 - (IBAction)speakNow:(id)sender{
     NSLog(@"the user should speak now");
+    [self recognize];
 }
 
 
@@ -125,22 +185,6 @@
     [self resetTransaction];
 }
 
-- (void)transaction:(SKTransaction *)transaction didFinishWithSuggestion:(NSString *)suggestion
-{
-    NSLog(@"didFinishWithSuggestion");
-    
-    // Notification of a successful transaction. Nothing to do here.
-}
-
-- (void)transaction:(SKTransaction *)transaction didFailWithError:(NSError *)error suggestion:(NSString *)suggestion
-{
-    NSLog(@"%@", [NSString stringWithFormat:@"didFailWithError: %@. %@", [error description], suggestion]);
-    
-    // Something went wrong. Check Configuration.mm to ensure that your settings are correct.
-    // The user could also be offline, so be sure to handle this case appropriately.
-    
-    [self resetTransaction];
-}
 
 #pragma mark - SKAudioPlayerDelegate
 
@@ -169,4 +213,96 @@
 }
 */
 
+- (void)loadEarcons
+{
+    // Load all of the earcons from disk
+    
+    NSString* startEarconPath = [[NSBundle mainBundle] pathForResource:@"sk_start" ofType:@"pcm"];
+    NSString* stopEarconPath = [[NSBundle mainBundle] pathForResource:@"sk_stop" ofType:@"pcm"];
+    NSString* errorEarconPath = [[NSBundle mainBundle] pathForResource:@"sk_error" ofType:@"pcm"];
+    
+    SKPCMFormat* audioFormat = [[SKPCMFormat alloc] init];
+    audioFormat.sampleFormat = SKPCMSampleFormatSignedLinear16;
+    audioFormat.sampleRate = 16000;
+    audioFormat.channels = 1;
+    
+    // Attach them to the session
+    
+    _skSession.startEarcon = [[SKAudioFile alloc] initWithURL:[NSURL fileURLWithPath:startEarconPath] pcmFormat:audioFormat];
+    _skSession.endEarcon = [[SKAudioFile alloc] initWithURL:[NSURL fileURLWithPath:stopEarconPath] pcmFormat:audioFormat];
+    _skSession.errorEarcon = [[SKAudioFile alloc] initWithURL:[NSURL fileURLWithPath:errorEarconPath] pcmFormat:audioFormat];
+}
+
+# pragma mark - SKTransactionDelegate
+
+- (void)transactionDidBeginRecording:(SKTransaction *)transaction
+{
+     NSLog(@"%@", @"transactionDidBeginRecording");
+    
+    _state = SKSListening;
+    [self startPollingVolume];
+    //[_toggleRecogButton setTitle:@"Listening.." forState:UIControlStateNormal];
+}
+
+- (void)transactionDidFinishRecording:(SKTransaction *)transaction
+{
+    NSLog(@"transactionDidFinishRecording");
+    
+    _state = SKSProcessing;
+    [self stopPollingVolume];
+    //[_toggleRecogButton setTitle:@"Processing.." forState:UIControlStateNormal];
+}
+
+- (void)transaction:(SKTransaction *)transaction didReceiveRecognition:(SKRecognition *)recognition
+{
+    NSLog(@"%@", [NSString stringWithFormat:@"didReceiveRecognition: %@", recognition.text]);
+    
+    _state = SKSIdle;
+}
+
+- (void)transaction:(SKTransaction *)transaction didReceiveServiceResponse:(NSDictionary *)response
+{
+    NSLog(@"%@", [NSString stringWithFormat:@"didReceiveServiceResponse: %@", response]);
+}
+
+- (void)transaction:(SKTransaction *)transaction didFinishWithSuggestion:(NSString *)suggestion
+{
+     NSLog(@"%@", @"didFinishWithSuggestion");
+    
+    _state = SKSIdle;
+    [self resetTransaction];
+}
+
+- (void)transaction:(SKTransaction *)transaction didFailWithError:(NSError *)error suggestion:(NSString *)suggestion
+{
+     NSLog(@"%@", [NSString stringWithFormat:@"didFailWithError: %@. %@", [error description], suggestion]);
+    
+    _state = SKSIdle;
+    [self resetTransaction];
+}
+
+
+# pragma mark - Volume level
+
+- (void)startPollingVolume
+{
+    // Every 50 milliseconds we should update the volume meter in our UI.
+    _volumePollTimer = [NSTimer scheduledTimerWithTimeInterval:0.05
+                                                        target:self
+                                                      selector:@selector(pollVolume)
+                                                      userInfo:nil repeats:YES];
+}
+
+- (void) pollVolume
+{
+    float volumeLevel = [_skTransaction audioLevel];
+    //[self.volumeLevelProgressView setProgress:volumeLevel/100.0];
+}
+
+- (void) stopPollingVolume
+{
+    [_volumePollTimer invalidate];
+    _volumePollTimer = nil;
+    //[self.volumeLevelProgressView setProgress:0.f];
+}
 @end

@@ -137,6 +137,7 @@
             allTests = [allTests stringByAppendingString:displayName];
         }
         NSLog(@"%@", allTests);
+        [self.appDelegate.sessionController stopBrowsing];
     } 
 }
 

@@ -167,7 +167,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="speakNow:" destination="vam-av-cou" eventType="touchUpInside" id="6wk-vS-NMD"/>
+                                    <action selector="speakNow:" destination="vam-av-cou" eventType="touchDown" id="igg-qT-nKr"/>
                                 </connections>
                             </button>
                         </subviews>

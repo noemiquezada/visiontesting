@@ -305,7 +305,7 @@ stepping back with your remote.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eer-Nh-HVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="313"/>
+            <point key="canvasLocation" x="2641" y="297"/>
         </scene>
     </scenes>
     <resources>

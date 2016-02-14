@@ -30,9 +30,25 @@
     counter=0;
    
     [self setRandomLetter:level];
-    
-    
+
+
 }
+
+
+
+- (void)handleReceivedDataWithNotification:(NSNotification *)notification {
+    // Get the user info dictionary that was received along with the notification.
+    NSDictionary *userInfoDict = [notification userInfo];
+    NSLog(@"Data was returned back");
+    // Convert the received data into a NSString object.
+    NSData *receivedData = [userInfoDict objectForKey:@"data"];
+    NSString *message = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    NSLog(@"%@", message);
+    [usersAnswerField setText:message];
+    [self submitPressed:self];
+}
+
+
 -(void)setRandomLetter: (int)alevel{
     NSString *letter = @"A";
     letter = [self getRandomCharAsNString];
