@@ -17,7 +17,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *pulser;
 - (IBAction)exitTestAction:(id)sender;
 - (IBAction)joinTestAction:(id)sender;
-- (IBAction)continueTestAction:(id)sender;
 - (void)showConfirmationAlert;
 
 

@@ -41,24 +41,19 @@
                              [UIImage imageNamed:@"pulse-2.png"],
                              [UIImage imageNamed:@"pulse-3.png"],
                              nil];
-//    NSArray * imageArray  = [[NSArray alloc] initWithObjects:
-//                             [UIImage imageNamed:@".png"],
-//                             nil];
-//    self.pulser = [[UIImageView alloc] initWithFrame:
-//                   CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height)];
     pulser.animationImages = imageArray;
     pulser.animationDuration = 1.0;
-//    pulser.contentMode = UIViewContentModeCenter;
-//    pulser.contentMode = UIViewContentModeScaleAspectFit;
-//    [self.view addSubview:pulser];
 
 }
 
 - (void)didFoundPeerNotification:(NSNotification *) notification {
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
-        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
+//        testButton.titleLabel.text = [[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0] displayName];
+        [pulser stopAnimating];
+        [self showConfirmationAlert];
     } else {
         testButton.titleLabel.text = @"Test";
+        [pulser stopAnimating];
     }
     
 }
@@ -88,12 +83,7 @@
     if ([self.appDelegate.sessionController.foundPeersArray count] > 0) {
         [self.appDelegate.sessionController sendInvitationToPeer:[self.appDelegate.sessionController.foundPeersArray objectAtIndex:0]];
     }
-    [self.pulser startAnimating];
-}
-
-- (IBAction)continueTestAction:(id)sender {
-    //    [self performSegueWithIdentifier:@"continueGame" sender:self];
-    [self showConfirmationAlert];
+    [pulser startAnimating];
 }
 -(void)showConfirmationAlert{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Device Pairing Successful"
@@ -106,10 +96,10 @@
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     // the user clicked continue
     if (buttonIndex == 0) {
-        NSLog(@"they clicked okay");
+        //take them to start speaking with Alexa
+        [self performSegueWithIdentifier:@"pairedSegue" sender:self];
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
