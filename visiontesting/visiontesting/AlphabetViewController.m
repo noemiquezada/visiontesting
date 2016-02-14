@@ -47,7 +47,7 @@
 }
 -(void)checkifAnswerMatches{
     NSString * userResponse= [NSString stringWithFormat:@"%@", [usersAnswerField text]];
-    if ([userResponse isEqualToString:[NSString stringWithFormat:@"%@", [letterLabel text]]]){
+    if ([userResponse isEqualToString:[NSString stringWithFormat:@"%@", [[letterLabel text] uppercaseString]]]){
         NSLog(@"match");
         visionScore++;
     }
