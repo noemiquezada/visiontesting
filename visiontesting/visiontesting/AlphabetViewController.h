@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "EyeObject.h"
 
-@interface AlphabetViewController : UIViewController <UITextFieldDelegate>
+@interface AlphabetViewController : UIViewController <UITextFieldDelegate>{
+    int visionScore;
+    int counter;
+    int level;
+    int letterSize;
+    bool testFinished;
+    EyeObject * myVisionExam;
+}
 @property (strong, nonatomic) IBOutlet UILabel *letterLabel;
 @property (strong, nonatomic) IBOutlet UITextField *usersAnswerField;
 - (IBAction)submitPressed:(id)sender;
