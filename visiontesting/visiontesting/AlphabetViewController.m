@@ -41,9 +41,16 @@
     letterSize = [self getFontSize:alevel];
     NSLog(@"The font size is %d for level %d", letterSize, alevel);
     // This sets the font for the label
-    [letterLabel setFont:[UIFont boldSystemFontOfSize:letterSize]];
+    [letterLabel setFont: [UIFont fontWithName:@"Rockwell" size:letterSize]];
     
-    
+//    dumpAllFonts();
+}
+static void dumpAllFonts() {
+    for (NSString *familyName in [UIFont familyNames]) {
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+            NSLog(@"%@", fontName);
+        }
+    }
 }
 -(void)checkifAnswerMatches{
     NSString * userResponse= [NSString stringWithFormat:@"%@", [usersAnswerField text]];
@@ -62,7 +69,9 @@
     usersAnswerField.text=@"";
     NSLog(@"vision score: %d", visionScore);
     if(testFinished==true){
-        letterLabel.text=[NSString stringWithFormat:@"Score is %@", [self getEyeLevel:myVisionExam.level]];
+        [letterLabel setFont: [UIFont boldSystemFontOfSize: 40]];
+        letterLabel.text=[NSString stringWithFormat:@"Your score is %@", [self getEyeLevel:myVisionExam.level]];
+        
     }
     if (myVisionExam.level==5 && counter==5){
             if (visionScore > 4){
@@ -148,21 +157,21 @@
         return @"Your vision is 20/20";
 }
 
--(int) getFontSize:(int) level
+-(int) getFontSize:(int) alevel
 {
-    if(level == 1)
+    if(alevel == 1)
         return 220;
-    else if (level == 2)
+    else if (alevel == 2)
         return 120;
-    else if (level == 3)
+    else if (alevel == 3)
         return 80;
-    else if (level == 4)
+    else if (alevel == 4)
         return 60;
-    else if (level == 5)
+    else if (alevel == 5)
         return 45;
-    else if (level == 6)
+    else if (alevel == 6)
         return 35;
-    else if (level == 7)
+    else if (alevel == 7)
         return 30;
     else
         return 25;
