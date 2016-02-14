@@ -20,7 +20,9 @@
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [self.appDelegate.sessionController setupPeerWithDisplayName:[UIDevice currentDevice].name];
     [self.appDelegate.sessionController setupSession];
-    [self.appDelegate.sessionController advertiseSelf:YES];
+    [self.appDelegate.sessionController setupAdvertising];
+    [self.appDelegate.sessionController.serviceAdvertiser startAdvertisingPeer];
+//    [self.appDelegate.sessionController advertiseSelf:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(peerChangedStateWithNotification:)
                                                  name:@"didChangeStateNotification"

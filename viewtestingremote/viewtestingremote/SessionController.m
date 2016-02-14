@@ -12,7 +12,7 @@ static SessionController *_sharedSessionController;
 
 @implementation SessionController
 
-static NSString * const sessionServiceType = @"loteria";
+static NSString * const sessionServiceType = @"evt";
 
 #pragma mark - Initializing Session Controller
 

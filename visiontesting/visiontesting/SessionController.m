@@ -12,7 +12,7 @@ static SessionController *_sharedSessionController;
 
 @implementation SessionController
 
-static NSString * const sessionServiceType = @"loteria";
+static NSString * const sessionServiceType = @"evt";
 
 #pragma mark - Initializing Session Controller
 
@@ -68,6 +68,22 @@ static NSString * const sessionServiceType = @"loteria";
 
 - (void)stopBrowsing {
     [self.browser stopBrowsingForPeers];
+}
+
+-(void)setupAdvertising {
+    self.serviceAdvertiser = [[MCNearbyServiceAdvertiser alloc] initWithPeer:self.peerID
+                                                               discoveryInfo:nil
+                                                                 serviceType:sessionServiceType];
+    self.serviceAdvertiser.delegate = self;
+    
+}
+
+-(void)startAdvertising {
+        [self.serviceAdvertiser startAdvertisingPeer];
+}
+
+-(void)stopAdvertising {
+        [self.serviceAdvertiser stopAdvertisingPeer];
 }
 
 #pragma mark - Advertiser
@@ -196,6 +212,23 @@ static NSString * const sessionServiceType = @"loteria";
 
 - (void)browser:(MCNearbyServiceBrowser *)browser didNotStartBrowsingForPeers:(NSError *)error {
     NSLog(@"didNotStartBrowsingForPeers: %@", error);
+}
+
+
+#pragma mark - MCNearbyServiceAdvertiserDelegate protocol conformance
+
+- (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didReceiveInvitationFromPeer:(MCPeerID *)peerID withContext:(NSData *)context invitationHandler:(void(^)(BOOL accept, MCSession *session))invitationHandler
+{
+    NSLog(@"didReceiveInvitationFromPeer %@", peerID.displayName);
+    
+    invitationHandler(YES, self.session);
+    
+    [self.foundPeersOrderedSet addObject:peerID];
+}
+
+- (void)advertiser:(MCNearbyServiceAdvertiser *)advertiser didNotStartAdvertisingPeer:(NSError *)error
+{
+    NSLog(@"didNotStartAdvertisingForPeers: %@", error);
 }
 
 
