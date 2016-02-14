@@ -32,7 +32,7 @@
     self.sessionController = [SessionController sharedSessionController];
     //Initiate Location Controller
     self.locationController = [LocationController sharedLocationController];
-    [self.locationController startLocationServices];
+    //[self.locationController startLocationServices];
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     
     return YES;

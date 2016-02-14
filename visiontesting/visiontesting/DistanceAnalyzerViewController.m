@@ -33,7 +33,7 @@
                                                  name:@"didReceiveDataNotification"
                                                object:nil];
     
-    [self requestLocation];
+    //[self requestLocation];
     
 }
 

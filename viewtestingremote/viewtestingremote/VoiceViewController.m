@@ -256,6 +256,7 @@
 - (void)transaction:(SKTransaction *)transaction didReceiveRecognition:(SKRecognition *)recognition
 {
     NSLog(@"%@", [NSString stringWithFormat:@"didReceiveRecognition: %@", recognition.text]);
+    [self sendAnswerWithResponse:[NSString stringWithFormat:@"%@", recognition.text]];
     
     _state = SKSIdle;
 }
@@ -263,7 +264,7 @@
 - (void)transaction:(SKTransaction *)transaction didReceiveServiceResponse:(NSDictionary *)response
 {
     NSLog(@"%@", [NSString stringWithFormat:@"didReceiveServiceResponse: %@", response]);
-    [self sendAnswerWithResponse:[NSString stringWithFormat:@"%@", response]];
+    
 }
 
 - (void)transaction:(SKTransaction *)transaction didFinishWithSuggestion:(NSString *)suggestion
