@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OaO-JM-Hyr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,25 +19,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgL-TS-BZR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem id="vyz-R0-dJR">
-                                        <barButtonItem key="rightBarButtonItem" title="skip" id="igT-W9-oKs"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIRECTIONS.png" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-BU-PyP">
+                                <rect key="frame" x="111" y="-50" width="378" height="613"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="405" id="2V3-Wj-FMg"/>
+                                    <constraint firstAttribute="width" constant="378" id="2hC-VA-KYe"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="613" id="Dl0-gN-LMI"/>
+                                    <constraint firstAttribute="height" constant="613" id="E1d-FS-jdA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="378" id="GwS-qR-mBz"/>
+                                    <constraint firstAttribute="height" constant="613" id="Sch-vl-pge"/>
+                                    <constraint firstAttribute="height" constant="613" id="TWN-G4-Ref"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="378" id="TwE-fh-03e"/>
+                                    <constraint firstAttribute="width" secondItem="LiD-BU-PyP" secondAttribute="height" multiplier="378:613" id="aAu-g4-WpT"/>
+                                    <constraint firstAttribute="width" secondItem="LiD-BU-PyP" secondAttribute="height" multiplier="378:613" id="aJp-kx-5LF"/>
+                                    <constraint firstAttribute="width" constant="378" id="grp-Ab-dVZ"/>
+                                    <constraint firstAttribute="width" secondItem="LiD-BU-PyP" secondAttribute="height" multiplier="405:656" id="r9Y-nz-DpH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="613" id="vSC-Kp-X0b"/>
+                                    <constraint firstAttribute="height" constant="656" id="vzY-v0-aEE"/>
+                                    <constraint firstAttribute="width" constant="378" id="wkD-t7-R8U"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2V3-Wj-FMg"/>
+                                        <exclude reference="2hC-VA-KYe"/>
+                                        <exclude reference="Dl0-gN-LMI"/>
+                                        <exclude reference="GwS-qR-mBz"/>
+                                        <exclude reference="Sch-vl-pge"/>
+                                        <exclude reference="TWN-G4-Ref"/>
+                                        <exclude reference="TwE-fh-03e"/>
+                                        <exclude reference="aAu-g4-WpT"/>
+                                        <exclude reference="aJp-kx-5LF"/>
+                                        <exclude reference="grp-Ab-dVZ"/>
+                                        <exclude reference="r9Y-nz-DpH"/>
+                                        <exclude reference="vSC-Kp-X0b"/>
+                                        <exclude reference="vzY-v0-aEE"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-Tp-O3G">
+                                <rect key="frame" x="217" y="511" width="167" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="14L-Yb-pjd"/>
+                                    <constraint firstAttribute="height" constant="30" id="l50-2R-ZsG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Let's Start"/>
+                                <connections>
+                                    <segue destination="OaO-JM-Hyr" kind="presentation" id="skX-s3-rUH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fgL-TS-BZR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Tp-lh-sUS"/>
-                            <constraint firstItem="fgL-TS-BZR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iu0-p9-eag"/>
-                            <constraint firstItem="fgL-TS-BZR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rtD-0H-9C0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LiD-BU-PyP" secondAttribute="bottom" constant="37" id="1gc-Gh-w9b"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-70" id="9Zd-jk-UP5"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="A9X-eo-p2W"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LiD-BU-PyP" secondAttribute="trailing" constant="79" id="BVm-K1-qYA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LiD-BU-PyP" secondAttribute="bottom" constant="39" id="OBM-k1-qZd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LiD-BU-PyP" secondAttribute="bottom" constant="39" id="QMY-cm-mh5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LiD-BU-PyP" secondAttribute="trailing" constant="79" id="Tyy-ti-DAE"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-43.5" id="Vwb-gc-R1D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LiD-BU-PyP" secondAttribute="trailing" constant="91" id="apm-Ai-Taw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wkg-Tp-O3G" secondAttribute="bottom" constant="59" id="cl6-Kr-r4v"/>
+                            <constraint firstItem="Wkg-Tp-O3G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ed8-Od-sJi"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-70" id="g16-fH-7Tz"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iYL-fU-ZKb"/>
+                            <constraint firstItem="LiD-BU-PyP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-52" id="tvU-84-Rrp"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Zd-jk-UP5"/>
+                                <exclude reference="A9X-eo-p2W"/>
+                                <exclude reference="BVm-K1-qYA"/>
+                                <exclude reference="Tyy-ti-DAE"/>
+                                <exclude reference="g16-fH-7Tz"/>
+                                <exclude reference="tvU-84-Rrp"/>
+                                <exclude reference="1gc-Gh-w9b"/>
+                                <exclude reference="OBM-k1-qZd"/>
+                                <exclude reference="QMY-cm-mh5"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DIRECTIONS.png" translatesAutoresizingMaskIntoConstraints="NO" id="bda-4g-gK9">
+                    <rect key="frame" x="0.0" y="0.0" width="378" height="613"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="613" id="7aJ-v8-Agj"/>
+                        <constraint firstAttribute="width" constant="405" id="S47-dK-puz"/>
+                        <constraint firstAttribute="width" secondItem="bda-4g-gK9" secondAttribute="height" multiplier="405:656" id="Wsb-8Y-Dcn"/>
+                        <constraint firstAttribute="height" constant="656" id="ZD6-zO-fpe"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="613" id="aBM-mB-gll"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="613" id="m23-T0-enx"/>
+                        <constraint firstAttribute="width" constant="378" id="meF-55-r2H"/>
+                        <constraint firstAttribute="width" secondItem="bda-4g-gK9" secondAttribute="height" multiplier="378:613" id="ztz-3d-Lb9"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="S47-dK-puz"/>
+                            <exclude reference="Wsb-8Y-Dcn"/>
+                            <exclude reference="ZD6-zO-fpe"/>
+                        </mask>
+                    </variation>
+                </imageView>
             </objects>
             <point key="canvasLocation" x="304" y="308"/>
         </scene>
@@ -309,6 +394,7 @@ stepping back with your remote.
         </scene>
     </scenes>
     <resources>
+        <image name="DIRECTIONS.png" width="564" height="768"/>
         <image name="inner.png" width="44" height="38"/>
     </resources>
 </document>

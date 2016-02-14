@@ -63,16 +63,9 @@
     NSLog(@"The font size is %d for level %d", letterSize, alevel);
     // This sets the font for the label
     [letterLabel setFont: [UIFont fontWithName:@"Rockwell" size:letterSize]];
-    
-//    dumpAllFonts();
 }
-static void dumpAllFonts() {
-    for (NSString *familyName in [UIFont familyNames]) {
-        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
-            NSLog(@"%@", fontName);
-        }
-    }
-}
+
+
 -(void)checkifAnswerMatches{
     NSString * userResponse= [NSString stringWithFormat:@"%@", [usersAnswerField text]];
     if ([userResponse isEqualToString:[NSString stringWithFormat:@"%@", [[letterLabel text] uppercaseString]]]){

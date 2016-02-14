@@ -40,6 +40,7 @@
 		44A3B8A81C7064AA002299E5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A71C7064AA002299E5 /* MapKit.framework */; };
 		44A3B8AA1C7070D9002299E5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */; };
 		44A3B8AF1C70A684002299E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A3B8AE1C70A684002299E5 /* Main.storyboard */; };
+		65630BA01C71040C002FC897 /* DIRECTIONS.png in Resources */ = {isa = PBXBuildFile; fileRef = 65630B9F1C71040C002FC897 /* DIRECTIONS.png */; };
 		65A2B5711C70716200347275 /* inner.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56C1C70716200347275 /* inner.png */; };
 		65A2B5721C70716200347275 /* pulse-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56D1C70716200347275 /* pulse-1.png */; };
 		65A2B5731C70716200347275 /* pulse-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A2B56E1C70716200347275 /* pulse-2.png */; };
@@ -116,6 +117,7 @@
 		44A3B8A71C7064AA002299E5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		44A3B8A91C7070D9002299E5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		44A3B8AE1C70A684002299E5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		65630B9F1C71040C002FC897 /* DIRECTIONS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DIRECTIONS.png; sourceTree = "<group>"; };
 		65A2B56C1C70716200347275 /* inner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inner.png; sourceTree = "<group>"; };
 		65A2B56D1C70716200347275 /* pulse-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-1.png"; sourceTree = "<group>"; };
 		65A2B56E1C70716200347275 /* pulse-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pulse-2.png"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		65A2B5761C7071A600347275 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				65630B9F1C71040C002FC897 /* DIRECTIONS.png */,
 				65A2B56C1C70716200347275 /* inner.png */,
 				65A2B56D1C70716200347275 /* pulse-1.png */,
 				65A2B56E1C70716200347275 /* pulse-2.png */,
@@ -422,6 +425,7 @@
 				44353D471C6FD7CE00F4C20B /* LaunchScreen.storyboard in Resources */,
 				44353D441C6FD7CE00F4C20B /* Assets.xcassets in Resources */,
 				65A2B5731C70716200347275 /* pulse-2.png in Resources */,
+				65630BA01C71040C002FC897 /* DIRECTIONS.png in Resources */,
 				65A2B5721C70716200347275 /* pulse-1.png in Resources */,
 				65A2B5711C70716200347275 /* inner.png in Resources */,
 				65A2B5741C70716200347275 /* pulse-3.png in Resources */,

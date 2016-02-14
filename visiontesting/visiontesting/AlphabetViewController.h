@@ -28,11 +28,6 @@
 
 
 - (NSString *)getRandomCharAsNString;
-//Initialize whether to start moving up or down
-//return 1 means that the user's vision testing will continue going DOWN
-//return 0 means that user's vision testing will continue going UP
--(BOOL) moveUpOrDown:(int) level;
--(EyeObject*)moveDownEyeChartWith:(EyeObject*) myVisionTest;
 - (NSString *) getEyeLevel:(int) level;
 -(int) getFontSize:(int) level;
 
